@@ -1,0 +1,15 @@
+{
+	"name" : "project1",
+	"components" : [
+		{
+			"type" : "service",
+			"flavor" : "python",
+			"name" : "infer_service"
+		},
+		{
+			"type" : "job",
+			"flavor" : "python",
+			"name" : "taxi_data_fetch"
+		}
+	]
+}

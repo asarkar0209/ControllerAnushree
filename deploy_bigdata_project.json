@@ -1,0 +1,11 @@
+{
+	"name": "naveensinha_spark_test_6",
+	"target_environment_type" : "spark",
+	"target_environment" : "DEV",
+	"components": {
+		"one_hot_encoder": {
+			"replicas": 2,
+			"branch": "master"
+		}
+	}
+}

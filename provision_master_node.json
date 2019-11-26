@@ -1,0 +1,5 @@
+{
+ "address": "172.16.1.100",
+ "nodetype": "CLUSTER_MASTER",
+ "cluster": "testcluster"
+}

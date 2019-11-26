@@ -1,0 +1,10 @@
+{
+	"name" : "bd_test_project",
+	"target_environment_type" : "spark",
+	"target_environment" : "DEV",
+	"pipelines" : {
+		"feature_generation_pipeline": {
+			"branch" : "master"
+		}
+	}
+}

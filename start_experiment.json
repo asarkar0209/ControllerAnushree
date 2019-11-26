@@ -1,0 +1,14 @@
+{
+	"run_name" : "sample_run",
+	"project name": "sample_project",
+	"pipeline name" : "sample_pipeline",
+	"pipeline_version": 2,
+	"experiment name": "sample_experiment",
+	"run_parameters" : {
+		"repo_name": "irrs_demo_repo",
+		"branch_name": "experiment",
+		"input_path": "/dataset/dataxlsx",
+		"output_path": "/data",
+		"commit": "c0c813f1d80643799fe8eac9a57f4af5"
+	}
+}

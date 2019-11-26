@@ -1,0 +1,5 @@
+{
+ "address": "172.16.3.4",
+ "nodetype": "CLUSTER_WORKER",
+ "masterip": "172.16.3.3"
+}

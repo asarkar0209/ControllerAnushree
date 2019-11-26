@@ -1,0 +1,99 @@
+{
+	"name": "project1",
+	"target_environment_type": "kubernetes",
+	"target_environment": "DEV",
+	"components": {
+		"service_reader": {
+			"replicas": 2,
+			"build_version": 3,
+			"environment": [],
+			"ports": [{
+				"name": "default",
+				"port": 5000
+			}, {
+				"name": "app1_port_new",
+				"port": 5051
+			}],
+			"persistence": {
+				"mount_path": "/app/data/"
+			},
+			"is_external": true
+		},
+		"database_service": {
+			"replicas": 1,
+			"custom_docker_image": "some-custom-docker-image",
+			"environment": [{
+				"name": "MYSQL_ROOT_PASSWORD",
+				"value": "password@123"
+			}],
+			"ports": [{
+				"name": "default",
+				"port": 3306
+			}]
+		},
+		"crawler_service": {
+			"replicas": 2,
+			"build_version": 1,
+			"environment": [],
+			"type": "job",
+			"cron_schedule": "",
+			"commands": []
+		}
+	},
+	"pipelines": {
+		"tfx_taxi_cab_classification": {
+			"components": {
+				"ds_job_taxi": {
+					"mount_path": "/app/data",
+					"custom_docker_image": "some-custom-docker-image"
+				},
+				"ds_service_taxi": {
+					"build_version": 1,
+					"mount_path": "/data"
+				}
+			}
+		}
+	},
+	"service_mesh": {
+        "reviews_service": {
+            "components": {
+                "no_stars": [{
+                    "version_name": "v1",
+                    "replicas": 1,
+                    "build_version": 2,
+                    "ports": [{"name": "http", "port": 9080}]
+                }],
+                "black_stars": [{
+                    "version_name": "v2",
+                    "replicas": 1,
+                    "custom_docker_image": "docker.io/istio/examples-bookinfo-reviews-v2:1.15.0",
+                    "ports": [{"name": "http", "port": 9080}]
+                }],
+                "red_stars": [{
+                    "version_name": "v3",
+                    "replicas": 1,
+                    "custom_docker_image": "docker.io/istio/examples-bookinfo-reviews-v3:1.15.0",
+                    "ports": [{"name": "http", "port": 9080}]
+                }]
+            },
+            "strategy": {
+                "weights": {
+                    "v3": 70,
+                    "v2": 20,
+                    "v1": 10
+                },
+                "rule": {
+                    "header": [
+                        {
+                            "match_type": "exact",
+                            "match_string": "sahil.malav",
+                            "header_value": "end-user",
+                            "destination": "v2"
+                        }
+                    ],
+                    "default_destination": "v1"
+                }
+            }
+        }
+    }
+}

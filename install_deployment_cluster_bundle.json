@@ -1,0 +1,16 @@
+{
+  "local": ["DeploymentClusterBundle"],
+  "DeploymentClusterBundle": {
+    "kubernetes_master": {
+      "address" : ["172.16.2.20"]
+    },
+    "kubernetes_node": {
+      "address":["172.16.2.21", "172.16.2.22"],
+      "master_ip": "172.16.2.20"
+    },
+    "kubeflow": {
+      "address": ["172.16.2.20"]
+    },
+    "exclude": []
+  }
+}

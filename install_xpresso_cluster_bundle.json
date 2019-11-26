@@ -1,0 +1,23 @@
+{
+  "local": ["DockerDistributionBundle", "XpressoClusterBundle", "KongGatewayBundle"],
+  "XpressoClusterBundle": {
+    "xpresso-controller": {
+      "address": ["localhost"]
+    },
+    "db": {
+      "address": ["localhost"]
+    },
+    "kubernetes_master": {
+      "address" : ["172.16.2.25"]
+    },
+    "kubernetes_node": {
+      "address":["172.16.2.31","172.16.2.32"],
+      "master_ip": "172.16.2.25"
+    },
+    "pachyderm": {
+      "address": ["172.16.2.25"],
+      "env" : "dev"
+    },
+    "exclude": {"address": []}
+  }
+}

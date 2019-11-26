@@ -1,0 +1,7 @@
+{
+	"experiment_name" : "sample_bd_experiment_1",
+	"project_name" : "bd_test_project",
+	"description" : "Creates a new experiment",
+	"pipeline_name": "feature_generation_pipeline",
+	"target_environment" : "DEV"
+}

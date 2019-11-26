@@ -1,0 +1,17 @@
+{
+	"run_name" : "sample_bigdata_run-1",
+	"project_name": "bd_test_project",
+	"pipeline_name" : "feature_generation_pipeline",
+	"experiment_name": "sample_bd_experiment_1",
+	"pipeline_version": 1,
+	"run_parameters" : {
+		"driver_memory": "2G",
+		"executor_memory" : "3G",
+		"executor_cores" : 3,
+		"num_executors" : 3,
+		"args" : [
+			"feature_generation_pipeline-arg-1",
+			"feature_generation_pipeline-arg-2"
+		]
+	}
+}

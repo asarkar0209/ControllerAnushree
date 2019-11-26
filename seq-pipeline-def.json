@@ -1,0 +1,82 @@
+{
+  "name": "sequential_pipeline_for_taxi",
+  "description": "A pipeline with two sequential steps.",
+  "main_func_params": {
+    "##dummyfileurl1##": "http://25.io/toau/audio/sample.txt",
+	"##dummyfileurl2##": "https://sample-videos.com/text/Sample-text-file-10kb.txt"
+  },
+  "components": [
+    {
+      "name": "data_fetch",
+	  "xpresso_reference": "ds_job_taxi",
+      "description": "downloads text from given url",
+      "inputs": [
+		{
+			"name": "url",
+			"type": "LocalPath",
+			"description": "Local path of file"
+		}
+        ],
+      "input_values": {
+        "##url##": "##dummyfileurl1##"
+      },
+	  "outputs": [
+		  {
+			"name": "out_file",
+			"type": "LocalPath",
+			"description": "Local path of file"
+		}
+	  ],
+      "implementation": {
+		"container": {
+			"image": "python:3.7-alpine",
+			"command": ["wget"],
+			"args": [
+				{
+					"inputValue": "url"
+				},
+				"-O",
+				"/outfile.txt"
+			],
+			"fileOutputs": {
+				"out_file" : "/outfile.txt"
+			}
+		}
+		}
+    },
+    {
+      "name": "data_process",
+	  "xpresso_reference": "ds_service_taxi",
+      "description": "echoes text",
+      "inputs": [
+		  {
+			"name": "text1",
+			"type": "LocalPath",
+			"description": "string to display"
+		},
+		  {
+			"name": "text2",
+			"type": "LocalPath",
+			"description": "string to display"
+		}
+	  ],
+      "input_values": {"##text1##": "##data_fetch.output##",
+	  					"##text2##": "##data_fetch.output##"},
+      "implementation": {
+		"container": {
+			"image": "library/bash:4.4.23",
+			"command": ["echo"],
+			"args": [
+				{
+					"inputValue": "text1"
+				},
+				{
+					"inputValue": "text2"
+				}
+			]
+		}
+		}
+    }
+  ],
+"after_dependencies": {"data_process":"data_fetch"}
+}

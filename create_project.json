@@ -1,0 +1,64 @@
+{
+	"name": "project1",
+	"projectDescription": "Test project created by xpresso platform",
+	"owner": {
+		"uid": "admin1"
+	},
+	"developers": ["admin1"],
+	"environments": ["DEV"],
+	"persistent_volume_size": 6,
+	"components": [
+		{
+			"type": "service",
+			"flavor": "python",
+			"name": "service_reader"
+		},
+		{
+			"type": "job",
+			"flavor": "python",
+			"name": "crawler_service"
+		},
+		{
+			"type": "database",
+			"flavor": "sql",
+			"name": "database_service"
+		},
+		{
+			"type": "service",
+			"flavor": "python",
+			"name": "ds_service_taxi"
+		},
+		{
+			"type": "job",
+			"flavor": "python",
+			"name": "ds_job_taxi"
+		},
+		{
+           "name" : "no_stars",
+           "type" : "service",
+           "flavor" : "python"
+        },
+        {
+           "name" : "black_stars",
+           "type" : "service",
+           "flavor" : "python"
+        },
+        {
+           "name" : "red_stars",
+           "type" : "service",
+           "flavor" : "python"
+        }
+	],
+	"pipelines": [{
+		"name": "tfx_taxi_cab_classification",
+		"components": ["ds_job_taxi", "ds_service_taxi"],
+		"flavor": "kubeflow",
+		"declarative_json": "/home/abzooba/seq-pipeline-def.json"
+	}],
+	"service_mesh": [
+        {
+          "name" : "reviews_service",
+          "components" : ["no_stars", "black_stars", "red_stars"]
+        }
+  ]
+}

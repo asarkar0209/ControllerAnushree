@@ -1,0 +1,34 @@
+{
+	"name" : "naveensinha_spark_start_pause_test",
+	"projectDescription" : "Test project for spark",
+	"owner" : {
+		"uid": "naveensinha"
+	},
+  	"developers" : ["naveensinha"],
+	"bigdata_environments":["DEV"],
+	"persistent_volume_size": 6,
+	"components" : [
+		{
+			"type" : "job",
+			"flavor" : "pyspark",
+			"name" : "counter1"
+		},
+		{
+			"type" : "job",
+			"flavor" : "pyspark",
+			"name" : "counter2"
+		},
+		{
+			"type" : "job",
+			"flavor" : "pyspark",
+			"name" : "counter3"
+		}
+	],
+	"pipelines" : [
+		{
+			"name" : "counter_pipeline",
+			"components" : ["counter1", "counter2", "counter3"],
+			"flavor": "pyspark"
+		}
+	]
+}
