@@ -9,9 +9,9 @@
 	"persistent_volume_size": 6,
 	"components": [
 		{
-			"type": "service",
+			"type": "job",
 			"flavor": "java",
-			"name": "service_reader"
+			"name": "EmployeePayroll"
 		}
 		
 	]
