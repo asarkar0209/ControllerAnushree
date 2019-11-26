@@ -1,0 +1,18 @@
+{
+	"name": "Testing_Java",
+	"projectDescription": "Test project created by xpresso platform for Java",
+	"owner": {
+		"uid": "asarkar"
+	},
+	"developers": ["asarkar"],
+	"environments": ["DEV"],
+	"persistent_volume_size": 6,
+	"components": [
+		{
+			"type": "service",
+			"flavor": "java",
+			"name": "service_reader"
+		}
+		
+	]
+}
