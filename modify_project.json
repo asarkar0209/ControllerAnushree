@@ -2,9 +2,7 @@
 	"name" : "testing_java",
 	"components" : [
 		{
-			"type" : "job",
-			"flavor" : "java",
-			"name" : "service_reader"
+			"type" : "job"
 		}
 	]
 }
