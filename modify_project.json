@@ -1,15 +1,10 @@
 {
-	"name" : "project1",
+	"name" : "testing_java",
 	"components" : [
 		{
-			"type" : "service",
-			"flavor" : "python",
-			"name" : "infer_service"
-		},
-		{
 			"type" : "job",
-			"flavor" : "python",
-			"name" : "taxi_data_fetch"
+			"flavor" : "java",
+			"name" : "service_reader"
 		}
 	]
 }
