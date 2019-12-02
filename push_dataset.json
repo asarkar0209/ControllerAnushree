@@ -3,5 +3,5 @@
   "branch_name": "demo_branch21",
   "description": "Testing push dataset",
   "dataset_name":"dataset2",
-  "path": "/titanic.csv"
+  "path": "../titanic.csv"
 }
