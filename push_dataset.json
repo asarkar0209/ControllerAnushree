@@ -2,5 +2,6 @@
   "repo_name": "xpr_testing_python1_sc",
   "branch_name": "anushree_new",
   "description": "Testing push dataset",
+  "dataset_name":"dataset1",
   "path": "samples/"
 }
