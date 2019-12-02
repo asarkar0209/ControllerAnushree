@@ -2,6 +2,6 @@
   "repo_name": "non_pipeline21",
   "branch_name": "demo_branch21",
   "description": "Testing push dataset",
-  "dataset_name":"dataset1",
-  "path": "titanic.csv"
+  "dataset_name":"dataset2",
+  "path": "/titanic.csv"
 }
