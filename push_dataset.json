@@ -1,7 +1,7 @@
 {
-  "repo_name": "testing_python1",
-  "branch_name": "anushree_new",
+  "repo_name": "non_pipeline21",
+  "branch_name": "demo_branch21",
   "description": "Testing push dataset",
   "dataset_name":"dataset1",
-  "path": "samples/"
+  "path": "samples/titanic.csv"
 }
