@@ -1,22 +1,10 @@
 { 
-	"name": "project1",
+	"name": "project_asarkar_pipe1",
 	"components":{
-		"service_reader": {
+		"data_fetch": {
 			"branch": "master",
-			"description": "trial version - 1"
-			},
-		"database_service": {
-			"branch": "master",
-			"description": "trial version - 1"
-			},
-		"crawler_service": {
-			"branch": "master",
-			"description": "trial version - 1"
-			},
-		"ds_service_taxi": {
-			"branch": "develop",
-			"description": "trial version - 1"
+			"description": "trying data fetch"
 			}
 		}
-	}
 }
+
