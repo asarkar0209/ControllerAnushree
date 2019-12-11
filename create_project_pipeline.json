@@ -20,4 +20,4 @@
 		"flavor": "kubeflow",
 		"declarative_json": "seq-pipeline-def.json"
 	}]
-}s
+}
