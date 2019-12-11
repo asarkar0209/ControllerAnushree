@@ -1,0 +1,48 @@
+{
+  "name": "sequential_pipeline_data_fetch",
+  "description": "A pipeline with one sequential steps.",
+  "main_func_params": {
+    "##dummyfileurl1##": "http://25.io/toau/audio/sample.txt",
+	"##dummyfileurl2##": "https://sample-videos.com/text/Sample-text-file-10kb.txt"
+  },
+  "components": [
+    {
+      "name": "data_fetch_python",
+	  "xpresso_reference": "data_fetch",
+      "description": "Loads csv from given url",
+      "inputs": [
+		{
+			"name": "url",
+			"type": "LocalPath",
+			"description": "Local path of file"
+		}
+        ],
+      "input_values": {
+        "##url##": "##dummyfileurl1##"
+      },
+	  "outputs": [
+		  {
+			"name": "out_file",
+			"type": "LocalPath",
+			"description": "Local path of file"
+		}
+	  ],
+      "implementation": {
+		"container": {
+			"image": "python:3.7-alpine",
+			"command": ["wget"],
+			"args": [
+				{
+					"inputValue": "url"
+				},
+				"-O",
+				"/outfile.txt"
+			],
+			"fileOutputs": {
+				"out_file" : "/outfile.txt"
+			}
+		}
+		}
+    }
+  ]
+}

@@ -8,16 +8,17 @@
 	"environments": ["QA"],
 	"persistent_volume_size": 6,
 	"components": [
-		{
-			"type": "job",
-			"flavor": "python",
-			"name": "data_fetch"
-		}
+
+        {
+           "name" : "data_fetch",
+           "type" : "job",
+           "flavor" : "python"
+        }
 	],
 	"pipelines": [{
 		"name": "data_fetch_python",
 		"components": ["data_fetch"],
 		"flavor": "kubeflow",
-		"declarative_json": "seq-pipeline-def.json"
+		"declarative_json": "seq-pipeline-def1.json"
 	}]
 }
