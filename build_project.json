@@ -1,9 +1,9 @@
 { 
-	"name": "project_asarkar_pipe1",
+	"name": "spark_test1",
 	"components":{
-		"data_fetch": {
+		"import_data": {
 			"branch": "master",
-			"description": "trying data fetch"
+			"description": "trying data import"
 			}
 		}
 }
