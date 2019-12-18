@@ -1,5 +1,5 @@
 {
-	"name": "saprk_test1",
+	"name": "spark_test1",
 	"target_environment_type" : "spark",
 	"target_environment" : "DEV",
 	"components": {
