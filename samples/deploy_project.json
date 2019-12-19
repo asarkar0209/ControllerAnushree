@@ -1,0 +1,52 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "target_environment": "DEV",
+  "components": {
+    "{{SVC_COMPONENT_NAME_1}}": {
+      "replicas": 2,
+      "build_version": 1,
+      "environment": [],
+      "ports": [{
+        "name": "default",
+        "port": 5000
+      }],
+      "persistence": {
+        "mount_path": "/app/data/"
+      }
+    },
+    "{{DB_COMPONENT_NAME_1}}": {
+      "replicas": 1,
+      "custom_docker_image": "mysql:5.7",
+      "environment": [{
+        "name": "MYSQL_ROOT_PASSWORD",
+        "value": "password@123"
+      }],
+      "ports": [{
+        "name": "default",
+        "port": 3306
+      }]
+    },
+    "{{JOB_COMPONENT_NAME_1}}": {
+      "replicas": 2,
+      "build_version": 1,
+      "environment": [],
+      "type": "job",
+      "cron_schedule": "",
+      "commands": []
+    }
+  },
+  "pipelines": {
+    "{{KUBEFLOW_PIPELINE_NAME_1}}": {
+      "components": {
+        "{{JOB_COMPONENT_NAME_1}}": {
+          "mount_path": "/data",
+          "custom_docker_image": "dockerregistry.xpresso.ai/library/xpresso_version:1.2.2"
+        },
+        "{{PIPELINE_JOB_COMPONENT_NAME_1}}": {
+          "build_version": 1,
+          "mount_path": "/data"
+        }
+      }
+    }
+  }
+}

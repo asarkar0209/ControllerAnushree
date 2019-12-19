@@ -1,0 +1,51 @@
+{
+  "name": "{{KUBEFLOW_PIPELINE_NAME_1}}",
+  "description": "A pipeline with two sequential steps.",
+  "components": [
+    {
+    "name": "{{JOB_COMPONENT_NAME_1}}",
+    "implementation": {
+      "container": {
+          "args": [
+            "data_pull",
+            "-in",
+            {
+                "inputValue": "inpath"
+            },
+            "-out",
+            {
+                "inputValue": "outpath"
+            },
+            "-r",
+            {
+                "inputValue": "repo_name"
+            },
+            "-b",
+            {
+                "inputValue": "branch_name"
+            },
+            "-c",
+            {
+                "inputValue": "commit"
+            },
+            "--type",
+            "files",
+            "-env",
+            "qa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "{{PIPELINE_JOB_COMPONENT_NAME_1}}",
+      "description": "Pipeline job component",
+      "implementation": {
+        "container": {
+          "args": [
+          ]
+        }
+      }
+    }
+  ],
+  "after_dependencies": {"{{PIPELINE_JOB_COMPONENT_NAME_1}}":["{{JOB_COMPONENT_NAME_1}}"]}
+}

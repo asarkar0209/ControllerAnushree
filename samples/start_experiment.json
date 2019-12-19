@@ -1,0 +1,14 @@
+{
+	"run_name" : "{{RUN}}",
+	"project_name": "{{PROJECT_NAME}}",
+	"pipeline_name" : "{{KUBEFLOW_PIPELINE_NAME_1}}",
+	"pipeline_version": 1,
+	"experiment_name": "{{EXP}}",
+	"run_parameters" : {
+		"repo_name": "rossman_sales_project",
+		"branch_name": "experiment",
+		"inpath": "/dataset/kaggle_dataset",
+		"outpath": "/data",
+		"commit": "c5c11adea0e64113b8a0c53242a6a683"
+	}
+}

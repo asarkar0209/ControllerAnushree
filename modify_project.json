@@ -1,8 +1,0 @@
-{
-	"name" : "testing_java",
-	"components" : [
-		{
-			"type" : "job"
-		}
-	]
-}

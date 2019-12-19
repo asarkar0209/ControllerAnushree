@@ -1,0 +1,25 @@
+{
+	"name":"{{PROJECT_NAME}}",
+	"target_environment_type":"spark",
+	"target_environment":"DEV",
+	"components":{
+	   "{{BD_COMPONENT_NAME_1}}":{
+		  "branch":"master",
+		  "run_parameters":{
+			 "driver_memory":"1G",
+			 "executor_memory":"1G",
+			 "executor_cores":1,
+			 "num_executors":2,
+			 "args":[
+				"string_indexer-arg-1-actual-2",
+				"string_indexer-arg-2-actual-3"
+			 ]
+		  }
+	   }
+	},
+	"pipelines" : {
+		"{{BD_PIPELINE_NAME_1}}": {
+			"branch" : "master"
+		}
+	}
+}

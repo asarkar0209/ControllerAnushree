@@ -1,0 +1,22 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "target_environment": "DEV",
+  "inference_service":{
+    "{{INFERENCE_SVC_COMPONENT_NAME_1}}":{
+      "runs":[
+        {
+          "pipeline_name": "{{KUBEFLOW_PIPELINE_NAME_1}}",
+          "experiment_name": "{{EXP_1}}",
+          "run_name": "{{RUN_1}}"
+        },
+        {
+          "pipeline_name": "{{KUBEFLOW_PIPELINE_NAME_1}}",
+          "experiment_name": "{{EXP_2}}",
+          "run_name": "{{RUN_2}}"
+        }
+      ],
+      "ports": [{"name": "default", "port": 5000}],
+      "build_version": 1
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"experiment_name" : "{{EXP}}",
+	"project_name" : "{{PROJECT_NAME}}",
+	"description" : "Creates a new experiment",
+	"pipeline_name": "{{BD_PIPELINE_NAME_1}}",
+	"target_environment" : "DEV"
+}

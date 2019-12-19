@@ -1,0 +1,16 @@
+{
+	"experiments": [
+		{
+                	"experiment_name" : "{{EXPERIMENT_NAME_1}}",
+                	"project_name": "{{PROJECT_NAME}}",
+                	"pipeline_name": "{{PIPELINE_NAME}}",
+                	"run_name": "{{RUN_1}}"
+		},
+		{
+                	"experiment_name" : "{{EXPERIMENT_NAME_2}}",
+                	"project_name": "{{PROJECT_NAME}}",
+                	"pipeline_name": "{{PIPELINE_NAME}}",
+                	"run_name": "{{RUN_2}}"
+		}
+	]
+}

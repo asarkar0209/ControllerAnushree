@@ -1,0 +1,18 @@
+{
+	"run_name":"{{RUN}}",
+	"project_name":"{{PROJECT_NAME}}",
+	"pipeline_name":"{{BD_PIPELINE_NAME_1}}",
+	"experiment_name":"{{EXP}}",
+	"pipeline_flavor":"pyspark",
+	"pipeline_version":1,
+	"run_parameters":{
+	   "driver_memory":"1G",
+	   "executor_memory":"1G",
+	   "executor_cores":1,
+	   "num_executors":2,
+	   "args":[
+		  "feature_generation_pipeline-arg 1 actual-2",
+		  "feature_generation_pipeline-arg 2 actual-3"
+	   ]
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"name": "{{PROJECT_NAME}}",
+	"projectDescription": "Test project created by xpresso platform",
+	"owner": {
+		"uid": "{{UID}}"
+	},
+	"developers": ["{{UID}}"],
+	"environments": ["DEV"],
+	"bigdata_environments":["DEV"],
+	"persistent_volume_size": 6,
+	"components": [
+		{
+			"type": "service",
+			"flavor": "python",
+			"name": "{{SVC_COMPONENT_NAME_1}}",
+			"description": "Relevant description"
+		},
+		{
+			"type": "job",
+			"flavor": "python",
+			"name": "{{JOB_COMPONENT_NAME_1}}",
+			"description": "Relevant description"
+		},
+		{
+			"type": "database",
+			"flavor": "sql",
+			"name": "{{DB_COMPONENT_NAME_1}}",
+			"description": "Relevant description"
+		},
+		{
+			"type": "inference_service",
+			"flavor": "python",
+			"name": "{{INFERENCE_SVC_COMPONENT_NAME_1}}",
+			"description": "Relevant description"
+		},
+		{
+			"type": "pipeline_job",
+			"flavor": "python",
+			"name": "{{PIPELINE_JOB_COMPONENT_NAME_1}}",
+			"description": "Relevant description"
+		},
+		{
+			"type":"job",
+			"flavor":"pyspark",
+			"name":"{{BD_COMPONENT_NAME_1}}",
+			"description": "Relevant description"
+		},
+		{
+			"type":"job",
+			"flavor":"pyspark",
+			"name":"{{BD_COMPONENT_NAME_2}}",
+			"description": "Relevant description"
+		}
+	],
+	"pipelines": [
+		{
+			"name": "{{KUBEFLOW_PIPELINE_NAME_1}}",
+			"components": ["{{JOB_COMPONENT_NAME_1}}", "{{PIPELINE_JOB_COMPONENT_NAME_1}}"],
+			"declarative_json": "seq-pipeline-def_{{PROJECT_NAME}}.json"
+		},{
+			"name":"{{BD_PIPELINE_NAME_1}}",
+			"components":[
+				"{{BD_COMPONENT_NAME_1}}",
+				"{{BD_COMPONENT_NAME_2}}"
+			],
+			"flavor":"pyspark"
+		}
+	],
+	"service_mesh": [
+		{
+			"name" : "{{SERVICE_MESH_NAME}}",
+			"components" : ["{{SVC_COMPONENT_NAME_1}}", "{{INFERENCE_SVC_COMPONENT_NAME_1}}"]
+		}
+	]
+}

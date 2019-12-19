@@ -1,0 +1,39 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "target_environment": "DEV",
+  "service_mesh": {
+    "{{SERVICE_MESH_NAME}}": {
+      "components": {
+        "{{INFERENCE_SVC_COMPONENT_NAME_1}}": [{
+          "version_name": "v1",
+          "replicas": 1,
+          "build_version": 1,
+          "ports": [{"name": "http", "port": 5000}]
+        }],
+        "{{SVC_COMPONENT_NAME_1}}": [{
+          "version_name": "v2",
+          "replicas": 1,
+          "build_version": 1,
+          "ports": [{"name": "http", "port": 5000}]
+        }]
+      },
+      "strategy": {
+        "weights": {
+          "v1": 70,
+          "v2": 30
+        },
+        "rule": {
+          "header": [
+            {
+              "match_type": "exact",
+              "match_string": "v2.user",
+              "header_value": "end-user",
+              "destination": "v2"
+            }
+          ],
+          "default_destination": "v1"
+        }
+      }
+    }
+  }
+}

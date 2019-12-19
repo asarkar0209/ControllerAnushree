@@ -1,0 +1,6 @@
+{
+		"experiment_name" : "sample_experiment",
+		"project_name": "sample_project",
+		"pipeline_name": "sample_pipeline",
+		"run_name": "sample_run"
+}

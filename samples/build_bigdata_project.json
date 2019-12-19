@@ -1,0 +1,23 @@
+{
+	"name":"{{PROJECT_NAME}}",
+	"components":{
+	   "{{COMPONENT_NAME_1}}":{
+		  "branch":"master",
+		  "description":"build one"
+	   },
+	   "{{COMPONENT_NAME_2}}":{
+		  "branch":"master",
+		  "description":"build one"
+	   },
+	   "{{COMPONENT_NAME_3}}":{
+		  "branch":"master",
+		  "description":"build one"
+	   }
+	},
+	"pipelines": {
+	   "{{PIPELINE_NAME_1}}": {
+		  "branch":"master",
+		  "description": "build one"
+	   }
+	}
+}

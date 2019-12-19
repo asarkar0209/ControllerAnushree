@@ -1,0 +1,45 @@
+{
+	"name":"sample-pyspark-project",
+	"projectDescription":"Creates a sample project for pyspark ML pipeline",
+	"owner":{
+	   "uid":"naveen"
+	},
+	"developers":[
+	   "naveen"
+	],
+	"bigdata_environments":[
+	   "DEV"
+	],
+	"persistent_volume_size":2,
+	"components":[
+	   {
+		  "type":"job",
+		  "flavor":"pyspark",
+		  "name":"string_indexer",
+		  "description": "some description"
+	   },
+	   {
+		  "type":"job",
+		  "flavor":"pyspark",
+		  "name":"one_hot_encoder",
+		  "description": "some description"
+	   },
+	   {
+		  "type":"job",
+		  "flavor":"pyspark",
+		  "name":"vector_assembler",
+		  "description": "some description"
+	   }
+	],
+	"pipelines":[
+	   {
+		  "name":"feature_engg_and_classifier_pipeline",
+		  "components":[
+			 "string_indexer",
+			 "one_hot_encoder",
+			 "vector_assembler"
+		  ],
+		  "flavor":"pyspark"
+	   }
+	]
+ }

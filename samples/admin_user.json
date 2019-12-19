@@ -1,0 +1,8 @@
+{
+    "uid": "{{UID}}",
+    "firstName": "test",
+    "lastName": "user",
+    "pwd": "{{PWD}}",
+    "email": "{{EMAIL}}",
+    "primaryRole": "{{ROLE}}"
+}
