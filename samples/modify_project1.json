@@ -12,7 +12,7 @@
 			"name" : "data_show",
 			"description": "Show data after loading"
 		}
-	]
+	],
 	"pipelines": [
 		{
 
