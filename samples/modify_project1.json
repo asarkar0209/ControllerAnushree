@@ -1,5 +1,18 @@
 {
 	"name" : "spark_test1",
+	"components" : [
+		{
+			"type" : "job",
+			"flavor" : "pyspark",
+			"name" : "import_data"
+		},
+		{
+			"type" : "job",
+			"flavor" : "pyspark",
+			"name" : "data_show",
+			"description": "Show data after loading"
+		}
+	]
 	"pipelines": [
 		{
 
