@@ -34,6 +34,7 @@
 	"pipelines":[
 	   {
 		  "name":"data_import_prep",
+		  "description": "Data import and preperation",
 		  "components":["data_fetch","data_prep"],
 		  "after_dependencies": {
                 	"data_prep": ["data_fetch"]
