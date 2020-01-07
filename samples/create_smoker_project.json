@@ -1,5 +1,5 @@
 {
-	"name":"smoker_test",
+	"name":"smoker_test1",
 	"projectDescription":"Creates a sample project for Kubeflow ML pipeline",
 	"owner":{
 	   "uid":"asarkar"
