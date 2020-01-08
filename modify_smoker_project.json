@@ -1,0 +1,15 @@
+{
+	"name" : "smoker_test1",
+	"pipelines": [
+		{
+
+		"name": "data_prep_train",
+		"description":"Preperation and training Pipeline",
+		"components": ["data_prep", "ml_train"],
+		"after_dependencies": {"ml_train": ["data_prep"]  }
+		
+		}
+	]
+	
+ 
+}

@@ -18,6 +18,10 @@
 	   "data_import_prep": {
 		  "branch":"master",
 		  "description": "build one for smoker project"
-	   }
+	   },
+	  "data_prep_train":{
+		"branch":"master",
+		"description":"build one for smoker project"
+			}
 	}
 }

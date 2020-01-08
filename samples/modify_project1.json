@@ -4,6 +4,7 @@
 		{
 
 		"name": "saprk_test1_pipeline1",
+		"description":"Import and data show",
 		"components": ["import_data", "data_show"],
 		"flavor":"pyspark"
 		
