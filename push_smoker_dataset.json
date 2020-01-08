@@ -1,6 +1,7 @@
 {
     "repo_name": "spark_test1",
     "dataset_name": "smoking_dataset",
+    "branch":"master",
     "description": "Smokers Data",
     "path": "data/smoking_dataset.csv"
 }
