@@ -3,5 +3,5 @@
     "branch_name": "smoker_data",
     "dataset_name": "smoking_dataset",
     "description": "Smokers Data",
-    "path": "data/"
+    "path": "data/smoking_dataset.csv"
 }
