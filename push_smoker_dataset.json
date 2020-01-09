@@ -1,7 +1,7 @@
 {
-    "repo_name": "spark_test1",
+    "repo_name": "spark_test2",
     "dataset_name": "smoking_dataset",
     "branch_name":"smoker_data",
     "description": "Smokers Data",
-    "path": "data/smoking_dataset.csv"
+    "path": "data/"
 }
