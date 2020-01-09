@@ -7,7 +7,7 @@
 		"components": {
         		"data_fetch": {
           			"mount_path": "/data",
-          			"build_version": "1",
+          			"custom_docker_image": "dockerregistry.xpresso.ai/xprops/smoker_test2/data_fetch--master:1",
          			"command": [],
           			"args": [
 						"data_pull",
@@ -39,7 +39,7 @@
        		 },
 
         		"data_prep": {
-          			"build_version": 1,
+          			"custom_docker_image": "dockerregistry.xpresso.ai/xprops/smoker_test2/data_prep--master:1",
           			"mount_path": "/data",
           			"command": [],
           			"args": [
@@ -50,7 +50,7 @@
         			},
 
        			"ml_train": {
-          			"build_version":1,
+          			"custom_docker_image":"dockerregistry.xpresso.ai/xprops/smoker_test2/ml_train--master:1",
           			"mount_path": "/data",
           			"command": [],
           			"args": [
