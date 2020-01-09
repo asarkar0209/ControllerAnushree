@@ -6,7 +6,7 @@
 		"components": {
         "data_fetch": {
           "mount_path": "/data",
-          "build_version": "7",
+          "build_version": "8",
           "command": [],
           "args": [
 						"data_pull",
@@ -37,7 +37,7 @@
 					]
         },
         "data_prep": {
-          "build_version": 7,
+          "build_version": 8,
           "mount_path": "/data",
           "command": [],
           "args": [
@@ -47,7 +47,7 @@
           ]
         },
         "ml_train": {
-          "build_version":7,
+          "build_version":8,
           "mount_path": "/data",
           "command": [],
           "args": [
