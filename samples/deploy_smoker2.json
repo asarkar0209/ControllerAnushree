@@ -1,16 +1,7 @@
 {
   "name": "smoker_test2",
   "target_environment": "DEV",
-  "components": {
-    "data_fetch": {
-      "replicas": 2,
-      "build_version": 1,
-      "environment_parameters": [],
-      "persistence": {
-        "mount_path": "/app/data/"
-	  }
-	}
-  },
+  "components": { },
   "pipelines": {
 		"data_import_prep": {
 		"components": {
