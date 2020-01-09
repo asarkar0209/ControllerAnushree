@@ -39,7 +39,7 @@
        		 },
 
         		"data_prep": {
-          			"build_version": 8,
+          			"build_version": 1,
           			"mount_path": "/data",
           			"command": [],
           			"args": [
@@ -50,7 +50,7 @@
         			},
 
        			"ml_train": {
-          			"build_version":8,
+          			"build_version":1,
           			"mount_path": "/data",
           			"command": [],
           			"args": [
