@@ -1,5 +1,5 @@
 { 
-	"name": "smoker_test1",
+	"name": "smoker_test2",
 	"components":{
 		"data_fetch": {
 			"branch": "master",
