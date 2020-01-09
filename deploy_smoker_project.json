@@ -33,7 +33,7 @@
 						"--type",
 						"files",
 						"-env",
-						"qa"
+						"DEV"
 					]
         },
         "data_prep": {
