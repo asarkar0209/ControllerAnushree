@@ -1,5 +1,5 @@
 {
-	"name":"smoker_test1",
+	"name":"smoker_test2",
 	"projectDescription":"Creates a sample project for Kubeflow ML pipeline",
 	"owner":{
 	   "uid":"asarkar"
@@ -7,7 +7,7 @@
 	"developers":[
 	   "asarkar"
 	],
-	"bigdata_environments":[
+	"environments":[
 	   "DEV"
 	],
 	"persistent_volume_size":2,
@@ -31,14 +31,14 @@
 		  "description": "Creating and training a model"
 	   }
 	],
-	"pipelines":[
-	   {
-		  "name":"data_import_prep",
-		  "description": "Data import and preperation",
-		  "components":["data_fetch","data_prep"],
-		  "after_dependencies": {
-                	"data_prep": ["data_fetch"]
-           		 }
-	   }
+	"pipelines": [
+		{
+
+		"name": "data_import_prep",
+		"description":"DAta import and Preperation",
+		"components": ["data_fetch", "data_prep","ml_train"],
+		"after_dependencies": {"data_prep": ["data_fetch"], "ml_train": ["data_prep"]  }
+		
+		}
 	]
  }
