@@ -6,7 +6,7 @@
 		"name": "data_import_prep",
 		"description":"DAta import and Preperation",
 		"components": ["data_fetch", "data_prep"],
-		"after_dependencies": {"data_prep": ["data_fetch"]  }
+		"after_dependencies": {"data_prep": ["data_fetch"], "ml_train": ["data_prep"]  }
 		
 		}
 	]
