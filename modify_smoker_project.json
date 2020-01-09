@@ -3,10 +3,10 @@
 	"pipelines": [
 		{
 
-		"name": "data_prep_train",
-		"description":"Preperation and training Pipeline",
-		"components": ["data_prep", "ml_train"],
-		"after_dependencies": {"ml_train": ["data_prep"]  }
+		"name": "data_import_prep",
+		"description":"DAta import and Preperation",
+		"components": ["data_fetch", "data_prep"],
+		"after_dependencies": {"data_prep": ["data_fetch"]  }
 		
 		}
 	]
