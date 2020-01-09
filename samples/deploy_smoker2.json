@@ -8,7 +8,8 @@
       "environment_parameters": [],
       "persistence": {
         "mount_path": "/app/data/"
-      }
+	  }
+	}
   },
   "pipelines": {
 		"data_import_prep": {
