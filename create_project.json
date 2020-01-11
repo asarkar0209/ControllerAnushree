@@ -1,5 +1,5 @@
 {
-	"name": "SLR",
+	"name": "slr",
 	"projectDescription": "Test project created by xpresso platform",
 	"owner": {
 		"uid": "asarkar"
@@ -11,6 +11,11 @@
 		{
 			"type": "job",
 			"flavor": "python",
+			"name": "data_fetch"
+		},
+		{
+			"type": "job",
+			"flavor": "python",
 			"name": "data_prep"
 		},
 	
@@ -18,7 +23,7 @@
 			"type": "job",
 			"flavor": "python",
 			"name": "data_train"
-		},
+		}
 		
 	],
 	"pipelines": [{
