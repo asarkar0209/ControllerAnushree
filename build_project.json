@@ -1,9 +1,14 @@
 { 
 	"name": "slr_asarkar",
 	"components":{
-		"data_prep": {
+		"data_fetch": {
 			"branch": "master",
 			"description": "Perperaing data",
+			"xpresso_dependencies": ["xpresso_ai"]
+			},
+		"data_prep":{
+			"branch":"master",
+			"description":"Training ML",
 			"xpresso_dependencies": ["xpresso_ai"]
 			},
 		"data_train":{
