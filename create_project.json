@@ -1,64 +1,39 @@
 {
-	"name": "project1",
+	"name": "slr",
 	"projectDescription": "Test project created by xpresso platform",
 	"owner": {
-		"uid": "admin1"
+		"uid": "asarkar"
 	},
-	"developers": ["admin1"],
+	"developers": ["asarkar"],
 	"environments": ["DEV"],
-	"persistent_volume_size": 6,
+	"persistent_volume_size": 2,
 	"components": [
 		{
-			"type": "service",
+			"type": "job",
 			"flavor": "python",
-			"name": "service_reader"
+			"name": "data_fetch"
 		},
 		{
 			"type": "job",
 			"flavor": "python",
-			"name": "crawler_service"
+			"name": "data_prep"
 		},
-		{
-			"type": "database",
-			"flavor": "sql",
-			"name": "database_service"
-		},
-		{
-			"type": "service",
-			"flavor": "python",
-			"name": "ds_service_taxi"
-		},
+	
 		{
 			"type": "job",
 			"flavor": "python",
-			"name": "ds_job_taxi"
-		},
-		{
-           "name" : "no_stars",
-           "type" : "service",
-           "flavor" : "python"
-        },
-        {
-           "name" : "black_stars",
-           "type" : "service",
-           "flavor" : "python"
-        },
-        {
-           "name" : "red_stars",
-           "type" : "service",
-           "flavor" : "python"
-        }
+			"name": "data_train"
+		}
+		
 	],
 	"pipelines": [{
-		"name": "tfx_taxi_cab_classification",
-		"components": ["ds_job_taxi", "ds_service_taxi"],
-		"flavor": "kubeflow",
-		"declarative_json": "/home/abzooba/seq-pipeline-def.json"
-	}],
-	"service_mesh": [
-        {
-          "name" : "reviews_service",
-          "components" : ["no_stars", "black_stars", "red_stars"]
-        }
-  ]
+		"name": "prep_slr",
+		"components": ["data_fetch", "data_prep", "data_train"],
+		"description":"A simple linear regression",
+	    	"after_dependencies": {
+                	"data_prep": ["data_fetch"],
+                	"data_train": ["data_prep"]
+		}
+	}]
+  
 }
