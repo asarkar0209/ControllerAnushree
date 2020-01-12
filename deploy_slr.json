@@ -59,6 +59,16 @@
 										"inputValue": "xpresso_run_name"
 									}
 				  ]
+				},
+		    "data_train": {
+				  "build_version": 1,
+				  "mount_path": "/data",
+				  "command": [],
+				  "args": [
+									{
+										"inputValue": "xpresso_run_name"
+									}
+				  ]
 				}
       }
     }
