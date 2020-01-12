@@ -1,13 +1,15 @@
 { 
-	"name": "spark_test1",
+	"name": "SLR",
 	"components":{
-		"import_data": {
+		"data_prep": {
 			"branch": "master",
-			"description": "trying data import"
+			"description": "Perperaing data",
+			"xpresso_dependencies": ["xpresso_ai"]
 			},
-		"data_show":{
+		"data_train":{
 			"branch":"master",
-			"description":"tring data show"
+			"description":"Training ML",
+			"xpresso_dependencies": ["xpresso_ai"]
 			}
 		}
 }
