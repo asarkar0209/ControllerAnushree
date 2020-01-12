@@ -6,7 +6,7 @@
 	},
 	"developers": ["asarkar"],
 	"environments": ["DEV"],
-	"persistent_volume_size": 6,
+	"persistent_volume_size": 2,
 	"components": [
 		{
 			"type": "job",
