@@ -1,5 +1,5 @@
 { 
-	"name": "SLR",
+	"name": "slr_asarkar",
 	"components":{
 		"data_prep": {
 			"branch": "master",
