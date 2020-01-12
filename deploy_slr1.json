@@ -4,7 +4,7 @@
 	"components": {
             "data_fetch":{
                     "replicas" : 2,
-                    "build_version" : 2},
+                    "build_version" : 1},
 
 	    "data_prep":{
                     "replicas" : 2,
@@ -12,7 +12,7 @@
 
 	   "data_train":{
                     "replicas" : 2,
-					"build_version" : 1}
+					"build_version" : 2}
 				},
 	
 	
@@ -52,7 +52,7 @@
 					]},
          	    
 		      "data_prep": {
-				  "build_version": 1,
+				  "build_version": 2,
 				  "mount_path": "/data",
 				  "command": [],
 				  "args": [
@@ -62,7 +62,7 @@
 				  ]
 				},
 		    "data_train": {
-				  "build_version": 1,
+				  "build_version": 2,
 				  "mount_path": "/data",
 				  "command": [],
 				  "args": [
