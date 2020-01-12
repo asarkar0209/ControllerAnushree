@@ -1,0 +1,17 @@
+{ 
+	"name": "smoker_test1",
+	"components":{
+		"data_fetch": {
+			"branch": "master",
+			"description": "data import"
+		},
+		"data_prep": {
+			"branch": "master",
+			"description": "preperation of data"
+		},
+		"ml_train": {
+			"branch": "master",
+			"description": "Training ML model"
+		}
+	}
+}
