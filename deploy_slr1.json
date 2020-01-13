@@ -1,21 +1,7 @@
 {
 	"name": "slr_asarkar",
 	"target_environment": "DEV",
-	"components": {
-            "data_fetch":{
-                    "replicas" : 2,
-                    "build_version" : 1},
-
-	    "data_prep":{
-                    "replicas" : 2,
-                    "build_version" : 2},
-
-	   "data_train":{
-                    "replicas" : 2,
-					"build_version" : 2}
-				},
-	
-	
+	"components": { },
 	"pipelines": {
 		"prep_slr": {
 		"components": {
