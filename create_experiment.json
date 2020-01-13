@@ -8,7 +8,7 @@
 		"branch_name": "smoker_data",
 		"inpath": "/dataset/smoking_datset",
 		"outpath": "/data",
-		"commit": "f472083d39954ddea5b9aff43a34d7a6",
+		"commit": "d72046423f7340c0881234af9f41b6e7",
     		"xpresso_run_name": "prep_slr_run1--slr_asarkar--prep_slr.1",
      
 	}
