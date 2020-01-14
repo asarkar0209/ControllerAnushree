@@ -3,18 +3,15 @@
 	"components":{
 		"data_fetch": {
 			"branch": "master",
-			"description": "Perperaing data",
-			"xpresso_dependencies": ["xpresso_ai"]
+			"description": "Perperaing data"
 			},
 		"data_prep":{
 			"branch":"master",
-			"description":"Training ML",
-			"xpresso_dependencies": ["xpresso_ai"]
+			"description":"Training ML"
 			},
 		"data_train":{
 			"branch":"master",
-			"description":"Training ML",
-			"xpresso_dependencies": ["xpresso_ai"]
+			"description":"Training ML"
 			}
 		}
 }
