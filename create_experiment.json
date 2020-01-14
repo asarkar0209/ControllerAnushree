@@ -4,7 +4,7 @@
 	"pipeline_name" : "prep_slr",
 	"pipeline_version": 2,
 	"run_parameters" : {
-    		"xpresso_run_name": "prep_slr_run2--slr_asarkar--prep_slr.2",
+    		"xpresso_run_name": "prep_slr_run2--slr_asarkar--prep_slr.2"
      
 	}
 }
