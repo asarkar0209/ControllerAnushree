@@ -4,11 +4,6 @@
 	"pipeline_name" : "prep_slr",
 	"pipeline_version": 1,
 	"run_parameters" : {
-		"repo_name": "slr_asarkar",
-		"branch_name": "smoker_data",
-		"inpath": "/dataset/smoking_datset",
-		"outpath": "/data",
-		"commit": "d72046423f7340c0881234af9f41b6e7",
     		"xpresso_run_name": "prep_slr_run1--slr_asarkar--prep_slr.1",
      
 	}
