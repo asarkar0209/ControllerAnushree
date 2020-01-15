@@ -1,10 +1,11 @@
 {
-	"run_name" : "prep_slr_run2",
-	"project_name": "slr_asarkar",
-	"pipeline_name" : "prep_slr",
-	"pipeline_version": 9,
+	"run_name" : "mlr1",
+	"project_name": "pipeline_rahi_project42",
+	"pipeline_name" : "KUBEFLOW_PIPELINE_NAME_1",
+	"pipeline_version": 2,
 	"run_parameters" : {
-    		"xpresso_run_name": "prep_slr_run2--slr_asarkar--prep_slr.9"
+    		"new_interest_rate":1.75,
+		"new_unemployment_rate":5.9,
      
 	}
 }
