@@ -3,11 +3,12 @@
 	"components":{
 		"data_fetch": {
 			"branch": "master",
-			"description": "Perperaing data"
-			},
+			"description": "Perperaing data",
+			"xpresso_dependencies": ["xpresso_ai"]},
 		"train_ml":{
 			"branch":"master",
-			"description":"Training ML"
+			"description":"Training ML",
+			"xpresso_dependencies": ["xpresso_ai"]
 			}
 		}
 
