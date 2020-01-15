@@ -8,7 +8,7 @@
 		"components": {
         		"data_fetch": {
 				"mount_path": "/data",
-				"build_version": 9,
+				"build_version": 10,
 				"command": [ ],
 				"args": [
 						{"inputValue":"run_id"},
@@ -18,10 +18,11 @@
 					]},
          	    
 		      "train_ml": {
-				  "build_version": 9,
+				  "build_version": 11,
 				  "mount_path": "/data",
 				  "command": [],
 				  "args": [
+					{"inputValue":"run_id"}
 				  ]
 				}
       }
