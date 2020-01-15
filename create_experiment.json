@@ -4,8 +4,8 @@
 	"pipeline_name" : "KUBEFLOW_PIPELINE_NAME_1",
 	"pipeline_version": 6,
 	"run_parameters" : {
-    		"new_interest_rate":1.75,
-		"new_unemployment_rate":5.9
+    		"new_interest_rate":1,
+		"new_unemployment_rate":5
 	}
 }
 
