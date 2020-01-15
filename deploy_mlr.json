@@ -7,7 +7,6 @@
 		"KUBEFLOW_PIPELINE_NAME_1": {
 		"components": {
         		"data_fetch": {
-				"replicas" : 2,
 				"mount_path": "/data",
 				"build_version": 3,
 				"command": [ ],
@@ -20,7 +19,6 @@
          	    
 		      "train_ml": {
 				  "build_version": 4,
-				  "replicas" : 2,
 				  "mount_path": "/data",
 				  "command": [],
 				  "args": [
