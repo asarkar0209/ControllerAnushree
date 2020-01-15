@@ -1,0 +1,18 @@
+{
+	"name": "pipeline_rahi_project42",
+	"components":{
+		"data_fetch": {
+			"branch": "master",
+			"description": "Perperaing data"
+			},
+		"ml_train":{
+			"branch":"master",
+			"description":"Training ML"
+			}
+		}
+
+}
+
+
+
+
