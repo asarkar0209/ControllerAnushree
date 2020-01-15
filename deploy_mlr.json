@@ -11,6 +11,7 @@
 				"build_version": 9,
 				"command": [ ],
 				"args": [
+						{"inputValue":"run_name"},
 						{"inputValue": "new_interest_rate"},
 						{"inputValue": "new_unemployment_rate"}
 
