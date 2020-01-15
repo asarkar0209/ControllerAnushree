@@ -1,0 +1,31 @@
+{
+	"name": "pipeline_rahi_project42",
+	"target_environment": "DEV",
+	"environment_parameters" : [],
+	"components": { },
+	"pipelines": {
+		"KUBEFLOW_PIPELINE_NAME_1": {
+		"components": {
+        		"data_fetch": {
+				"mount_path": "/data",
+				"build_version": 2,
+				"command": [ ],
+				"args": [
+						{"inputValue": "xpresso_run_name"},
+						{"inputValue": "New_Interest_Rate"},
+						{"inputValue": "New_Unemployment_Rate"}
+
+					]},
+         	    
+		      "train_ml": {
+				  "build_version": 3,
+				  "mount_path": "/data",
+				  "command": [],
+				  "args": [
+						{"inputValue": "xpresso_run_name"}
+				  ]
+				}
+      }
+    }
+  }
+}
