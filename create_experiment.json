@@ -2,7 +2,7 @@
 	"run_name" : "mlr2",
 	"project_name": "pipeline_rahi_project42",
 	"pipeline_name" : "KUBEFLOW_PIPELINE_NAME_1",
-	"pipeline_version": 6,
+	"pipeline_version": 7,
 	"run_parameters" : {
     		"new_interest_rate":1.75,
 		"new_unemployment_rate":5.9
