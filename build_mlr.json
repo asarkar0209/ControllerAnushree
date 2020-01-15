@@ -5,7 +5,7 @@
 			"branch": "master",
 			"description": "Perperaing data"
 			},
-		"ml_train":{
+		"train_ml":{
 			"branch":"master",
 			"description":"Training ML"
 			}
