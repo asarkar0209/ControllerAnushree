@@ -13,8 +13,8 @@
 				"command": [ ],
 				"args": [
 						{"inputValue": "xpresso_run_name"},
-						{"inputValue": "New_Interest_Rate"},
-						{"inputValue": "New_Unemployment_Rate"}
+						{"inputValue": "new_interest_rate"},
+						{"inputValue": "new_unemployment_rate"}
 
 					]},
          	    
