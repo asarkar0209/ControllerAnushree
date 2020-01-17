@@ -1,0 +1,14 @@
+{
+	"run_name" : "dt_run1",
+	"project_name": "adit_tutorial3",
+	"pipeline_name" : "training_pipeline",
+	"pipeline_version": 1,
+	"run_parameters" : {
+		"repo_name": "adit_tutorial3",
+		"branch_name": "salary_data",
+		"inpath": "/dataset/salary",
+		"outpath": "/data",
+		"commit": "4746e9ee7e1c4324a03eaf475986a3cb"
+    
+      	}
+}

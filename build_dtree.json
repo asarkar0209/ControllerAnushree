@@ -1,0 +1,22 @@
+{
+	"name": "adit_tutorial3",
+	"components":{
+
+		"data_prep": {
+			"branch": "master",
+			"description": "Training data",
+			"xpresso_dependencies": ["xpresso_ai"]
+		},
+		"data_train": {
+			"branch": "master",
+			"description": "Training data",
+			"xpresso_dependencies": ["xpresso_ai"]
+		}
+
+	}
+
+}
+
+
+
+

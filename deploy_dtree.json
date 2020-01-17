@@ -1,0 +1,51 @@
+{
+	"name": "adit_tutorial3",
+	"target_environment": "DEV",
+	"environment_parameters" : [],
+	"components": { },
+	"pipelines": {
+		"training_pipeline": {
+		"components": {
+			"data_prep": {
+				"mount_path": "/data",
+				"custom_docker_image": "dockerregistry.xpresso.ai/library/xpresso_version:1.2.2",
+				"command": [],
+				"args": [
+							  "data_pull",
+							  "-in",
+							  {
+								  "inputValue": "inpath"
+							  },
+							  "-out",
+							  {
+								  "inputValue": "outpath"
+							  },
+							  "-r",
+							  {
+								  "inputValue": "repo_name"
+							  },
+							  "-b",
+							  {
+								  "inputValue": "branch_name"
+							  },
+							  "-c",
+							  {
+								  "inputValue": "commit"
+							  },
+							  "--type",
+							  "files",
+							  "-env",
+							  "qa"
+						  ]
+			  },
+
+        		"data_train": {
+				"mount_path": "/data",
+				"build_version": 1,
+				"command": [ ],
+				"args": [
+					]}
+      }
+    }
+  }
+}
