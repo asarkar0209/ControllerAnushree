@@ -41,7 +41,7 @@
 
         		"data_train": {
 				"mount_path": "/data",
-				"build_version": "4",
+				"build_version": "5",
 				"command": [ ],
 				"args": [{"inputValue": "xpresso_run_name" }]
 					}
