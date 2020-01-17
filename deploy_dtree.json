@@ -43,8 +43,8 @@
 				"mount_path": "/data",
 				"build_version": "4",
 				"command": [ ],
-				"args": [
-					]}
+				"args": [{"inputValue": "xpresso_run_name" }]
+					}
       }
     }
   }
