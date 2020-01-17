@@ -1,0 +1,35 @@
+{
+    "name": "adit_tutorial",
+    "projectDescription": "Project to Salary of Employee",
+    "owner": {
+        "uid": "aditya.kashyap"
+    },
+    "developers": ["aditya.kashyap"],
+    "environments": ["DEV"],
+    "persistent_volume_size": 2,
+        "components": [
+    {
+    "name": "data_prep",
+    "type": "pipeline_job",
+    "flavor": "python",
+        "description": "Data Preparation"
+    },
+    {
+        "name": "data_train",
+    "type": "pipeline_job",
+    "flavor": "python",
+        "description": "Data Training"
+    }
+    ],
+   
+"pipelines":[
+        {
+            "name": "training_pipeline",
+            "description": "Training Pipeline",
+            "components": ["data_prep", "data_train"],
+        "after_dependencies": {
+                "data_train": ["data_prep"]
+            }
+        }
+    ]
+}

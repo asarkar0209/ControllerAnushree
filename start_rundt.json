@@ -1,10 +1,10 @@
 {
 	"run_name" : "dt_run1",
-	"project_name": "adit_tutorial3",
+	"project_name": "adit_tutorial",
 	"pipeline_name" : "training_pipeline",
 	"pipeline_version": 1,
 	"run_parameters" : {
-		"repo_name": "adit_tutorial3",
+		"repo_name": "adit_tutorial",
 		"branch_name": "salary_data",
 		"inpath": "/dataset/salary",
 		"outpath": "/data",

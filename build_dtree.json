@@ -1,5 +1,5 @@
 {
-	"name": "adit_tutorial3",
+	"name": "adit_tutorial",
 	"components":{
 		"data_train": {
 			"branch": "master",
