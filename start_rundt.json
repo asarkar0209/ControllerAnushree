@@ -1,5 +1,5 @@
 {
-	"run_name" : "dt_run1",
+	"run_name" : "dt_run2",
 	"project_name": "adit_tutorial",
 	"pipeline_name" : "training_pipeline",
 	"pipeline_version": 7,
