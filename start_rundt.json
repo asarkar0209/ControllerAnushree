@@ -2,7 +2,7 @@
 	"run_name" : "dt_run2",
 	"project_name": "adit_tutorial",
 	"pipeline_name" : "training_pipeline",
-	"pipeline_version": 7,
+	"pipeline_version": 8,
 	"run_parameters" : {
 		"repo_name": "adit_tutorial",
 		"branch_name": "salary_data",
