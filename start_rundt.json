@@ -8,7 +8,7 @@
 		"branch_name": "salary_data",
 		"inpath": "/dataset/salary",
 		"outpath": "/data",
-		"commit": "3a5f7348a8f04a7f8f2f94c44c34e7af"
+		"commit": "d74af8a7ffcd4260845f1b6eab00f455"
     
       	}
 }

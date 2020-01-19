@@ -1,10 +1,10 @@
 {
-	"name": "adit_tutorial",
+	"name":"diabetes_dnn",
 	"target_environment": "DEV",
 	"environment_parameters" : [],
 	"components": { },
 	"pipelines": {
-		"training_pipeline": {
+		"seq_pipeline": {
 		"components": {
 			"data_fetch": {
 				"mount_path": "/data",
