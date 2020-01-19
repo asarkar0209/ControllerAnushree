@@ -1,24 +1,27 @@
 {
-	"name": "project_asarkar_pipe1",
+	"name": "diabetes_dnn",
 	"projectDescription": "Test project created by xpresso platform for simple pipeline testing",
 	"owner": {
 		"uid": "asarkar"
 	},
 	"developers": ["asarkar"],
-	"environments": ["QA"],
-	"persistent_volume_size": 6,
+	"environments": ["DEV"],
+	"persistent_volume_size": 2,
 	"components": [
-
-        {
+		{
            "name" : "data_fetch",
            "type" : "job",
            "flavor" : "python"
-        }
+		},
+		{
+			"name" : "dnn_train",
+			"type" : "job",
+			"flavor" : "python"
+		 }
 	],
 	"pipelines": [{
-		"name": "data_fetch_python",
-		"components": ["data_fetch"],
-		"flavor": "kubeflow",
-		"declarative_json": "seq-pipeline-def1.json"
+		"name": "seq_pipeline",
+		"components": ["data_fetch","dnn_train"],
+		"after_dependencies": {"dnn_train": ["data_fetch"]}
 	}]
 }
