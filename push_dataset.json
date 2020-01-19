@@ -1,7 +1,7 @@
 {
-  "repo_name": "adit_tutorial",
-  "branch_name": "salary_data",
-  "description": "Salary dataset",
-  "dataset_name":"salary",
+  "repo_name": "diabetes_dnn",
+  "branch_name": "dnn_diabetes",
+  "description": "diabetes dataset",
+  "dataset_name":"diabetes_data",
   "path": "data/"
 }
