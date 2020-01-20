@@ -1,0 +1,11 @@
+{
+	"name" : "diabetes_dnn",
+	"components" : [
+		{
+			"type" : "pipeline_job",
+			"flavor" : "python",
+			"name" : "dnn_train",
+			"description": "Training the model"
+		}
+	]
+}

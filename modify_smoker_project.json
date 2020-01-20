@@ -1,15 +1,9 @@
 {
-	"name" : "smoker_test1",
-	"pipelines": [
-		{
-
-		"name": "data_import_prep",
-		"description":"DAta import and Preperation",
-		"components": ["data_fetch", "data_prep","ml_train"],
-		"after_dependencies": {"data_prep": ["data_fetch"], "ml_train": ["data_prep"]  }
-		
+	"name" : "diabetes_dnn",
+	"action_type":"delete",
+	"components": [{
+			"name" : "dnn_train"
 		}
 	]
-	
- 
+
 }

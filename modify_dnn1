@@ -1,0 +1,23 @@
+{
+	"name" : "diabetes_dnn",
+	"components" : [
+		{
+			"type" : "pipeline_job",
+			"flavor" : "python",
+			"name" : "dnn_train",
+			"description": "Training the model"
+		},
+        {
+           "name" : "data_fetch",
+           "type" : "job",
+           "flavor" : "python"
+		},
+	],
+	"pipelines": [{
+		"name": "seq_pipeline",
+		"components": ["data_fetch", "dnn_train"],
+		"after_dependencies": {
+		                         "dnn_train": ["data_fetch"]
+		                      }
+	}]
+}
