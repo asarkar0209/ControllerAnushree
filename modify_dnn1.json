@@ -11,7 +11,7 @@
            "name" : "data_fetch",
            "type" : "job",
            "flavor" : "python"
-		},
+		}
 	],
 	"pipelines": [{
 		"name": "seq_pipeline",
