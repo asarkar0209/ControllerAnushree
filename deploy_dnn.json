@@ -44,7 +44,6 @@
 				"build_version": "1",
 				"command": [ ],
 				"args": [{"inputValue": "xpresso_run_name" },
-						,
 		                {
 					"inputValue": "batch_size"
 				},
