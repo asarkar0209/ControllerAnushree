@@ -1,5 +1,5 @@
 {
-	"run_name" : "dnn_run3",
+	"run_name" : "dnn_run4",
 	"project_name": "diabetes_dnn",
 	"pipeline_name" : "seq_pipeline",
 	"pipeline_version": 4,
@@ -10,7 +10,7 @@
 		"outpath": "/data",
 		"commit": "d74af8a7ffcd4260845f1b6eab00f455",
 		"batch_size": 10,
-        "train_epochs": 150
+        "train_epochs": 130
     
       	}
 }
