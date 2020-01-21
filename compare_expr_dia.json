@@ -1,0 +1,16 @@
+{
+    "experiments": [
+    {
+        "project_name": "diabetes_dnn",
+        "pipeline_name": "seq_pipeline",
+        "pipeline_version": 4,
+        "run_name": "dnn_run3"
+    },
+    {
+        "project_name": "diabetes_dnn",
+        "pipeline_version": 4,
+        "pipeline_name": "seq_pipeline",
+        "run_name": "dnn_run4"
+    }
+    ]
+}
