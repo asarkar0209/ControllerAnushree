@@ -1,10 +1,10 @@
 {
 	"name" : "diabetes_dnn",
 	"pipelines": [{
-		"name": "seq_pipeline",
-		"components": ["data_fetch", "dnn_train"],
+		"name": "kfold_pipeline",
+		"components": ["data_fetch", "dnn_kfold"],
 		"after_dependencies": {
-		                         "dnn_train": ["data_fetch"]
+		                         "dnn_kfold": ["data_fetch"]
 		                      }
 	}]
 }

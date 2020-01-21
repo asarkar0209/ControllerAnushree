@@ -4,8 +4,8 @@
 		{
 			"type" : "pipeline_job",
 			"flavor" : "python",
-			"name" : "dnn_train",
-			"description": "Training the model"
+			"name" : "dnn_kfold",
+			"description": "Training the model with Kfold"
 		}
 	]
 }
