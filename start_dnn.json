@@ -1,8 +1,8 @@
 {
-	"run_name" : "dnn_run5",
+	"run_name" : "dnn_run1",
 	"project_name": "diabetes_dnn",
 	"pipeline_name" : "kfold_pipeline",
-	"pipeline_version": 5,
+	"pipeline_version": 6,
 	"run_parameters" : {
 		"repo_name": "diabetes_dnn",
 		"branch_name": "dnn_diabetes",
