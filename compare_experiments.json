@@ -1,16 +1,16 @@
 {
-	"experiments": [
-		{
-                	"experiment name" : "sample_experiment",
-                	"project name": "sample_project",
-                	"pipeline name": "sample_pipeline",
-                	"run_name": "sample_run"
-		},
-		{
-                	"experiment name" : "sample_experiment",
-                	"project name": "sample_project",
-                	"pipeline name": "sample_pipeline",
-                	"run_name": "sample_run_1"
-		}
-	]
+    "experiments": [
+    {
+        "project_name": "diabetes_dnn",
+        "pipeline_name": "seq_pipeline",
+        "pipeline_version": 4,
+        "run_name": "dnn_run3"
+    },
+    {
+        "project_name": "diabetes_dnn",
+        "pipeline_version": 6,
+        "pipeline_name": "kfold_pipeline",
+        "run_name": "dnn_run1"
+    }
+    ]
 }
