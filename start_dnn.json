@@ -1,5 +1,5 @@
 {
-	"run_name" : "dnn_run4",
+	"run_name" : "dnn_run1",
 	"project_name": "diabetes_dnn",
 	"pipeline_name" : "seq_pipeline",
 	"pipeline_version": 4,
