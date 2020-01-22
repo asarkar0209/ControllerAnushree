@@ -1,7 +1,7 @@
 {
 	"name": "diabetes_dnn",
 	"components":{
-		"dnn_train": {
+		"dnn_kflod": {
 			"branch": "master",
 			"description": "Training data",
 			"xpresso_dependencies": ["xpresso_ai"]
