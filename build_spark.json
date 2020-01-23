@@ -1,9 +1,10 @@
 { 
-	"name": "spark_asarkar",
+	"name": "spark_asarkar_",
 	"components":{
 		"import_data": {
 			"branch": "master",
-			"description": "Perperaing data"
+			"description": "Perperaing data",
+			"xpresso_dependencies": ["xpresso_ai"]
 			}
 		}
 }
