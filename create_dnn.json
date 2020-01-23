@@ -13,11 +13,11 @@
            "type" : "job",
            "flavor" : "python"
 		},
-		{
-			"name" : "dnn_train",
-			"type" : "job",
-			"flavor" : "python"
-		 }
+	       {
+		"name" : "dnn_train",
+		"type" : "job",
+		"flavor" : "python"
+	      }
 	],
 	"pipelines": [{
 		"name": "seq_pipeline",
