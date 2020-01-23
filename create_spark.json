@@ -9,7 +9,7 @@
 	"persistent_volume_size": 2,
 	"components" : [
 		{
-			"type" : "pipeline_job",
+			"type" : "job",
 			"flavor" : "pyspark",
 			"name" : "import_data"
 		}
