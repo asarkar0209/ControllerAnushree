@@ -1,5 +1,5 @@
 {
-	"run_name" : "dnn_run1",
+	"run_name" : "dnn_run3",
 	"project_name": "diabetes_dnn",
 	"pipeline_name" : "kfold_pipeline",
 	"pipeline_version": 6,
