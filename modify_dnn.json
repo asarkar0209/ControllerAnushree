@@ -2,10 +2,10 @@
 	"name" : "diabetes_dnn",
 	"components" : [
 		{
-			"type" : "pipeline_job",
+			"type" : "inference_service",
 			"flavor" : "python",
-			"name" : "dnn_kfold",
-			"description": "Training the model with Kfold"
+			"name" : "dnn_infer",
+			"description": "Inference service for the model with Kfold"
 		}
 	]
 }
