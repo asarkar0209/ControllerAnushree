@@ -1,15 +1,14 @@
 {
 	"name": "diabetes_dnn",
 	"components":{
-		"dnn_kfold": {
-			"branch": "master",
-			"description": "Training data",
-			"xpresso_dependencies": ["xpresso_ai"]
+				"dnn_infer": {
+					"branch": "master",
+					"description": "trial version - 1",
+					"xpresso_dependencies": ["xpresso_ai"]
+				}
 		}
-
-	}
-
 }
+
 
 
 

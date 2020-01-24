@@ -1,0 +1,19 @@
+{
+  "name": "diabetes_dnn",
+  "target_environment": "DEV",
+  "inference_service":{
+    "components":{
+            "dnn_infer":{
+                "runs":[
+                    {
+                        "pipeline_name": "kfold_pipeline",
+                        "pipeline_version": 6,
+                        "run_name": "dnn_run3"
+                    }
+                ],
+                "ports": [{"name": "http", "port": 5000}],
+                "build_version": 1
+            }
+    }
+  }
+}
