@@ -20,10 +20,10 @@
                 "build_version": 1
             }
     },
-	"mesh_name": "kkumarqa_tutorial3_svc_mesh",
+	"mesh_name": "diabetes_dnn_svc_mesh",
         "weights": {
-        "dnn_run_1": 50,
-        "dnn_run_3": 50
+        "dnn_run1": 50,
+        "dnn_run3": 50
   }
  }
 }
