@@ -1,75 +1,44 @@
 {
-	"name": "{{PROJECT_NAME}}",
+	"name": "mlr_asarkar",
 	"projectDescription": "Test project created by xpresso platform",
 	"owner": {
-		"uid": "{{UID}}"
+		"uid": "asarkar"
 	},
-	"developers": ["{{UID}}"],
+	"developers": ["asarkar"],
 	"environments": ["DEV"],
-	"bigdata_environments":["DEV"],
-	"persistent_volume_size": 6,
+	"persistent_volume_size": 1,
 	"components": [
-		{
-			"type": "service",
-			"flavor": "python",
-			"name": "{{SVC_COMPONENT_NAME_1}}",
-			"description": "Relevant description"
-		},
+		
 		{
 			"type": "job",
 			"flavor": "python",
-			"name": "{{JOB_COMPONENT_NAME_1}}",
-			"description": "Relevant description"
+			"name": "data_fetch",
+			"description": "Fetching data using xpresso"
 		},
 		{
-			"type": "database",
-			"flavor": "sql",
-			"name": "{{DB_COMPONENT_NAME_1}}",
-			"description": "Relevant description"
+			"type":"pipeline_job",
+			"flavor":"python",
+			"name":"data_train",
+			"description": "MLR Model Train"
 		},
 		{
-			"type": "inference_service",
-			"flavor": "python",
-			"name": "{{INFERENCE_SVC_COMPONENT_NAME_1}}",
-			"description": "Relevant description"
-		},
-		{
-			"type": "pipeline_job",
-			"flavor": "python",
-			"name": "{{PIPELINE_JOB_COMPONENT_NAME_1}}",
-			"description": "Relevant description"
-		},
-		{
-			"type":"job",
-			"flavor":"pyspark",
-			"name":"{{BD_COMPONENT_NAME_1}}",
-			"description": "Relevant description"
-		},
-		{
-			"type":"job",
-			"flavor":"pyspark",
-			"name":"{{BD_COMPONENT_NAME_2}}",
-			"description": "Relevant description"
+			"type":"inference_service",
+			"flavor":"python",
+			"name":"data_test",
+			"description": "Tesing data using inference"
 		}
 	],
 	"pipelines": [
 		{
-			"name": "{{KUBEFLOW_PIPELINE_NAME_1}}",
-			"components": ["{{JOB_COMPONENT_NAME_1}}", "{{PIPELINE_JOB_COMPONENT_NAME_1}}"],
-			"declarative_json": "seq-pipeline-def_{{PROJECT_NAME}}.json"
+			"name": "fetch_train_pipe1",
+			"components": ["data_fetch","data_train"],
+			"description": "Fetch and MLR",
+			"after_dependencies": {"data_train": ["data_fetch"]}
 		},{
-			"name":"{{BD_PIPELINE_NAME_1}}",
-			"components":[
-				"{{BD_COMPONENT_NAME_1}}",
-				"{{BD_COMPONENT_NAME_2}}"
-			],
-			"flavor":"pyspark"
-		}
-	],
-	"service_mesh": [
-		{
-			"name" : "{{SERVICE_MESH_NAME}}",
-			"components" : ["{{SVC_COMPONENT_NAME_1}}", "{{INFERENCE_SVC_COMPONENT_NAME_1}}"]
+			"name":"fetch_train_pipe2",
+			"components":["data_fetch","data_train"],
+			"description":"Fetch and Mlr2",
+			"after_dependencies": {"data_train": ["data_fetch"]}
 		}
 	]
 }
