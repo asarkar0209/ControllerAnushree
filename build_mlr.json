@@ -1,10 +1,6 @@
 {
 	"name": "mlr_asarkar",
 	"components":{
-		"data_fetch": {
-			"branch": "master",
-			"description": "Loading data",
-			"xpresso_dependencies": ["xpresso_ai"]},
 		"data_train":{
 			"branch":"master",
 			"description":"Training ML",
