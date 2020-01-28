@@ -1,0 +1,13 @@
+{
+	"run_name" : "mlr_run1",
+	"project_name": "mlr_asarkar",
+	"pipeline_name" : "fetch_train_pipe1",
+	"pipeline_version": 1,
+	"run_parameters" : {
+		"repo_name": "mlr_asarkar",
+		"branch_name": "mlr_dataset",
+		"inpath": "/dataset/stroke_data",
+		"outpath": "/data",
+		"commit": "41126cbd54884241b86c3454a789eb8a"
+	}
+}

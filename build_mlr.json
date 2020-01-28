@@ -1,11 +1,11 @@
 {
-	"name": "pipeline_rahi_project42",
+	"name": "mlr_asarkar",
 	"components":{
 		"data_fetch": {
 			"branch": "master",
-			"description": "Perperaing data",
+			"description": "Loading data",
 			"xpresso_dependencies": ["xpresso_ai"]},
-		"train_ml":{
+		"data_train":{
 			"branch":"master",
 			"description":"Training ML",
 			"xpresso_dependencies": ["xpresso_ai"]
