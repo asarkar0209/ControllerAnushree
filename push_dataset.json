@@ -1,7 +1,7 @@
 {
-  "repo_name": "diabetes_dnn",
-  "branch_name": "dnn_diabetes",
-  "description": "diabetes dataset",
-  "dataset_name":"diabetes_data",
+  "repo_name": "mlr_asarkar",
+  "branch_name": "mlr_dataset",
+  "description": "Stroke dataset",
+  "dataset_name":"stroke_data",
   "path": "data/"
 }
