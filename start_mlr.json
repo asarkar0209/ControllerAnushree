@@ -1,5 +1,5 @@
 {
-	"run_name" : "mlr_run3",
+	"run_name" : "mlr_run4",
 	"project_name": "mlr_asarkar",
 	"pipeline_name" : "fetch_train_pipe1",
 	"pipeline_version": 2,
@@ -8,7 +8,7 @@
 		"branch_name": "mlr_dataset",
 		"inpath": "/dataset/stroke_data",
 		"outpath": "/data",
-		"commit": "41126cbd54884241b86c3454a789eb8a",
+		"commit": "5f5788bfc28c4b9f8c744c30d7bf83a0",
 		"new_interest_rate":2,
 		"new_unemployment_rate":5
 	}
