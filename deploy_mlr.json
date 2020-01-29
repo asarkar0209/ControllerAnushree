@@ -1,28 +1,51 @@
 {
-	"name": "pipeline_rahi_project42",
+	"name": "mlr_asarkar",
 	"target_environment": "DEV",
 	"environment_parameters" : [],
 	"components": { },
 	"pipelines": {
-		"KUBEFLOW_PIPELINE_NAME_1": {
+		"fetch_train_pipe1": {
 		"components": {
         		"data_fetch": {
 				"mount_path": "/data",
-				"build_version": 10,
-				"command": [ ],
-				"args": [
-						{"inputValue":"run_id"},
-						{"inputValue": "new_interest_rate"},
-						{"inputValue": "new_unemployment_rate"}
-
+				"custom_docker_image": "dockerregistry.xpresso.ai/library/xpresso_version:1.2.2",
+          		"command": [],
+         		"args": [
+						"data_pull",
+						"-in",
+						{
+							"inputValue": "inpath"
+						},
+						"-out",
+						{
+							"inputValue": "outpath"
+						},
+						"-r",
+						{
+							"inputValue": "repo_name"
+						},
+						"-b",
+						{
+							"inputValue": "branch_name"
+						},
+						"-c",
+						{
+							"inputValue": "commit"
+						},
+						"--type",
+						"files",
+						"-env",
+						"qa"
 					]},
          	    
-		      "train_ml": {
-				  "build_version": 11,
+		      "data_train": {
+				  "build_version": 3,
 				  "mount_path": "/data",
 				  "command": [],
 				  "args": [
-					{"inputValue":"run_id"}
+					{"inputValue":"xpresso_run_name"},
+					{"inputValue":"new_interest_rate"},
+					{"inputValue":"new_unemployment_rate"}
 				  ]
 				}
       }
