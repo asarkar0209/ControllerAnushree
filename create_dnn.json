@@ -1,5 +1,5 @@
 {
-	"name": "diabetes_dnn",
+	"name": "testing_diabetes_dnn_3",
 	"projectDescription": "Test project created by xpresso platform for simple pipeline testing",
 	"owner": {
 		"uid": "asarkar"
@@ -10,12 +10,12 @@
 	"components": [
 		{
            "name" : "data_fetch",
-           "type" : "job",
+           "type" : "pipeline_job",
            "flavor" : "python"
 		},
 	       {
 		"name" : "dnn_train",
-		"type" : "job",
+		"type" : "pipeline_job",
 		"flavor" : "python"
 	      }
 	],
