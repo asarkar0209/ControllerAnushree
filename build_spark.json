@@ -1,11 +1,18 @@
-{ 
-	"name": "spark_asarkar_",
+{
+	"name":"crew_members_asarkar",
 	"components":{
-		"import_data": {
-			"branch": "master",
-			"description": "Perperaing data",
-			"xpresso_dependencies": ["xpresso_ai"]
-			}
-		}
-}
-
+	   "string_indexer":{
+		  "branch":"master",
+		  "description":"build from master with stroke predictor."
+	   },"vector_assembler":{
+		  "branch":"master",
+		  "description":"build from master with stroke predictor."
+	   }
+	},
+	"pipelines": {
+	   "predictive_pipeline": {
+		  "branch":"master",
+		  "description": "build from master with stroke predictor."
+	   }
+	}
+ }
