@@ -1,0 +1,38 @@
+{
+	"name":"crew_members_asarkar",
+	"projectDescription":"Using Spark’s spark.ml Linear Regression for predicting crew members required.",
+	"owner":{
+	   "uid":"asarkar"
+	},
+	"developers":[
+	   "asarkar"
+	],
+	"bigdata_environments":[
+	   "DEV"
+	],
+	"persistent_volume_size":2,
+	"components":[
+
+	   {
+		  "type":"job",
+		  "flavor":"pyspark",
+		  "name":"vector_assembler",
+		  "description": "Component extending pyspark' VectorAssembler helps in assembling all the feature into feature vector."
+	   },
+	   {
+		  "type":"job",
+		  "flavor":"pyspark",
+		  "name":"model_evaluation",
+		  "description": "This job is used for model generating predictions."
+	   }
+	],
+	"pipelines":[
+	   {
+		  "name":"predictive_pipeline",
+		  "components":[
+			 "vector_assembler"
+		  ],
+		  "description": "Feature engineering and model generation pipeline."
+	   }
+	]
+ }
