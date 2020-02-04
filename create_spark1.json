@@ -20,6 +20,12 @@
 		  "description": "Component extending pyspark' VectorAssembler helps in assembling all the feature into feature vector."
 	   },
 	   {
+		"type":"job",
+		"flavor":"pyspark",
+		"name":"string_indexer",
+		"description": "Component extending pyspark' VectorAssembler helps in assembling all the feature into feature vector."
+	 },
+	   {
 		  "type":"job",
 		  "flavor":"pyspark",
 		  "name":"model_evaluation",
@@ -30,7 +36,8 @@
 	   {
 		  "name":"predictive_pipeline",
 		  "components":[
-			 "vector_assembler"
+			 "vector_assembler",
+			 "string_indexer"
 		  ],
 		  "description": "Feature engineering and model generation pipeline."
 	   }
