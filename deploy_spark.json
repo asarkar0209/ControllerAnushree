@@ -1,0 +1,9 @@
+{
+    "name":"crew_members_asarkar",
+    "target_environment":"DEV",
+    "pipelines":{
+       "predictive_pipeline":{
+          "build_version" : 1
+       }
+    }
+ }
