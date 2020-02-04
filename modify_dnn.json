@@ -1,11 +1,19 @@
 {
-	"name" : "diabetes_dnn",
+	"name" : "crew_members_asarkar",
 	"components" : [
 		{
-			"type" : "inference_service",
-			"flavor" : "python",
-			"name" : "dnn_infer",
-			"description": "Inference service for the model with Kfold"
+			"type" : "job",
+			"flavor" : "pyspark",
+			"name":"one_hot_encoder",
+         "description": "This maps a categorical feature, represented as a label index, to a binary vector with at most a single one-value indicating the presence of a specific feature value from among the set of all feature values and extends pyspark' OneHotEncoderEstimator."
 		}
-	]
+	],
+	"pipelines": [{
+		"name": "predictive_pipeline",
+		"components":["string_indexer",
+            "one_hot_encoder",
+            "vector_assembler"
+         ],
+         "description": "Feature engineering and model generation pipeline."
+	}]
 }
