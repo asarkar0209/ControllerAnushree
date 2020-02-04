@@ -1,0 +1,14 @@
+{
+    "run_name":"spark_run1",
+    "project_name":"crew_members_asarkar",
+    "pipeline_name":"predictive_pipeline",
+    "pipeline_flavor":"pyspark",
+    "pipeline_version":1,
+ 
+    "run_parameters":{
+       "driver_memory":"512m",
+       "executor_memory":"512m",
+       "executor_cores":"1",
+       "num_executors":1
+    }
+ }
