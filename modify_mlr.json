@@ -1,32 +1,8 @@
 {
 	"name":"crew_members_asarkar",
-	"components":[
-
-	   {
-		  "type":"job",
-		  "flavor":"pyspark",
-		  "name":"vector_assembler"
-	   },
-	   {
-		"type":"job",
-		"flavor":"pyspark",
-		"name":"string_indexer"
-	 },
-	   {
-		  "type":"job",
-		  "flavor":"pyspark",
-		  "name":"encoder"
-	   }
-	],
+	"action_type":"delete",
 	"pipelines":[
 	   {
-		  "name":"predictive_pipeline",
-		  "components":[
-			 "vector_assembler",
-			 "string_indexer",
-			 "encoder"
-		  ],
-		  "description": "Feature engineering and model generation pipeline."
-	   }
+		  "name":"predictive_pipeline"	   }
 	]
  }
