@@ -1,0 +1,14 @@
+{
+	"name" : "crew_members_asarkar",
+	"pipelines":[
+		{
+		   "name":"predictive_pipeline",
+		   "components":[
+			  "one_hot_encoder",
+			  "vector_assembler",
+			  "string_indexer"
+		   ],
+		   "description": "Feature engineering and model generation pipeline."
+		}
+	 ]
+}
