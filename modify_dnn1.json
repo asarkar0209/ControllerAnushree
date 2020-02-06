@@ -1,10 +1,37 @@
 {
-	"name" : "diabetes_dnn",
-	"pipelines": [{
-		"name": "kfold_pipeline",
-		"components": ["data_fetch", "dnn_kfold"],
-		"after_dependencies": {
-		                         "dnn_kfold": ["data_fetch"]
-		                      }
-	}]
-}
+	"name":"crew_members_asarkar",
+	"components":[
+
+	   {
+		  "type":"job",
+		  "flavor":"pyspark",
+		  "name":"vector_assembler",
+		// Already in the project
+		  "description": "Component extending pyspark' VectorAssembler helps in assembling all the feature into feature vector."
+	   },
+	   {
+		"type":"job",
+		"flavor":"pyspark",
+		"name":"string_indexer",
+		// Already in the project
+		"description": "Component extending pyspark' VectorAssembler helps in assembling all the feature into feature vector."
+	 },
+	 {
+		"type":"job",
+		"flavor":"pyspark",
+		"name":"encoder",
+		// New comp to be added
+		"description": "Component extending pyspark' VectorAssembler helps in assembling all the feature into feature vector."
+	 }
+	],
+	"pipelines":[
+	   {
+		  "name":"predictive_pipeline",//This pipeline already had vectpr_assembler and string_indexer(addin encoder into it.)
+		  "components":[
+			 "vector_assembler",
+			 "string_indexer",
+			 "encoder"
+		  ]
+	   }
+	]
+ }

@@ -2,7 +2,13 @@
 	"name":"crew_members_asarkar",
 	"action_type":"delete",
 	"pipelines":[
-	   {
-		  "name":"predictive_pipeline"	   }
-	]
+		{
+		   "name":"predictive_pipeline",
+		   "components":[
+			  "vector_assembler",
+			  "string_indexer",
+			  "one_hot_encoder"
+		   ]
+		}
+	 ]
  }
