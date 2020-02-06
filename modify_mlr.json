@@ -4,7 +4,6 @@
 		{
 		   "name":"predictive_pipeline",
 		   "components":[
-			   "encoder",
 			  "vector_assembler",
 			  "string_indexer"
 		   ]}]
