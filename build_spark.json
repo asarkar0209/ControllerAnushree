@@ -1,22 +1,9 @@
 {
 	"name":"crew_members_asarkar",
 	"components":{
-	   "string_indexer":{
-		  "branch":"master",
-		  "description":"build from master with crew members."
-	   },"vector_assembler":{
-		  "branch":"master",
-		  "description":"build from master with crew members."
-	   },
-	   "one_hot_encoder":{
+	    "model_evaluation":{
 		"branch":"master",
 		"description":"build from master with crew members"
 	 }
-	},
-	"pipelines": {
-	   "predictive_pipeline": {
-		  "branch":"master",
-		  "description": "build from master with crew members."
-	   }
-	}
  }
+}
