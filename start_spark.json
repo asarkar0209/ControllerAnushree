@@ -3,7 +3,7 @@
     "project_name":"crew_members_asarkar",
     "pipeline_name":"predictive_pipeline",
     "pipeline_flavor":"pyspark",
-    "pipeline_version":2,
+    "pipeline_version":3,
  
     "run_parameters":{
        "driver_memory":"512m",

@@ -5,5 +5,11 @@
 		"branch":"master",
 		"description":"build from master with crew members"
 	 }
+ },
+ "pipelines":{
+	"feature_engg_and_classifier_pipeline": {
+	   "branch":"master",
+	   "description": "build from master.."
+	}}
+	
  }
-}

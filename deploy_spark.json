@@ -1,16 +1,9 @@
 {
    "name":"crew_members_asarkar",
    "target_environment":"DEV",
-   "components":{
-      "model_evaluation":{
-         "build_version" : 1,
-         "run_parameters":{
-            "driver_memory":"512m",
-            "executor_memory":"512m",
-            "executor_cores":1,
-            "num_executors":1,
-            "xpresso_run_name":"<xpresso_run_name>"
-         }
+   "pipelines":{
+      "feature_engg_and_classifier_pipeline":{
+         "build_version" : 3
       }
    }
 }
