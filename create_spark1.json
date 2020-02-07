@@ -31,13 +31,21 @@
 		  "name":"model_evaluation",
 		  "description": "This job is used for model generating predictions."
 	   }
+	   ,
+	   {
+		  "type":"job",
+		  "flavor":"pyspark",
+		  "name":"one_hot_encoder",
+		  "description": "This job is used for encoding features into an array."
+	   }
 	],
 	"pipelines":[
 	   {
 		  "name":"predictive_pipeline",
 		  "components":[
 			 "vector_assembler",
-			 "string_indexer"
+			 "string_indexer",
+			 "one_hot_encoder"
 		  ],
 		  "description": "Feature engineering and model generation pipeline."
 	   }
