@@ -7,9 +7,9 @@
 	 }
  },
  "pipelines":{
-	"feature_engg_and_classifier_pipeline": {
+	"predictive_pipeline": {
 	   "branch":"master",
 	   "description": "build from master.."
 	}}
-	
+
  }
