@@ -3,7 +3,7 @@
    "target_environment":"DEV",
    "components":{
     "model_evaluation":{
-       "build_version" : 3,
+       "build_version" : 4,
        "run_parameters":{
           "driver_memory":"512m",
           "executor_memory":"512m",

@@ -3,7 +3,7 @@
    "target_environment":"DEV",
    "pipelines":{
       "predictive_pipeline":{
-         "build_version" : 3
+         "build_version" : 4
       }
    }
 }
