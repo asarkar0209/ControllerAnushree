@@ -5,11 +5,6 @@
 		"branch":"master",
 		"description":"build from master with crew members"
 	 }
- },
- "pipelines":{
-	"predictive_pipeline": {
-	   "branch":"master",
-	   "description": "build from master.."
-	}}
+ }
 
  }
