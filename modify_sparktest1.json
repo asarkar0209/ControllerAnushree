@@ -4,8 +4,11 @@
 		{
 		   "name":"spark_test1_pipeline1",
 		   "components":[
-			  "data_show"
-		   ]
+              "data_show",
+              "data_fetch"
+           ],
+           "pipelineType":"kuberflow",
+           "after_dependencies":[{"dependentFrom":"data_show","dependentTo":"data_fetch"}]
 		}
 	 ]
  }
