@@ -1,0 +1,11 @@
+{
+	"name":"spark_test1",
+	"pipelines":[
+		{
+		   "name":"spark_test1_pipeline1",
+		   "components":[
+			  "data_show"
+		   ]
+		}
+	 ]
+ }
