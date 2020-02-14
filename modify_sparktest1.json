@@ -2,13 +2,13 @@
 	"name":"spark_test1",
 	"pipelines":[
 		{
-		   "name":"spark_test1_pipeline1",
+		   "name":"spark_test1_pipeline2",
 		   "components":[
               "data_show",
-              "data_fetch"
+              "import_data"
            ],
            "pipelineType":"kuberflow",
-           "after_dependencies":[{"dependentFrom":"data_show","dependentTo":"data_fetch"}]
+           "after_dependencies":[{"dependentFrom":"data_show","dependentTo":"import_data"}]
 		}
 	 ]
  }
