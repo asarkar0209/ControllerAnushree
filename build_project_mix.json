@@ -1,0 +1,9 @@
+{
+  "name": "pipeline_rahi_project83",
+	"pipelines": {
+	   "BigData_pipeline83": {
+		  "branch":"master",
+		  "description": "build one"
+	   }
+	}
+}

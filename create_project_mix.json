@@ -1,0 +1,60 @@
+{
+	"name": "pipeline_rahi_project83",
+	"projectDescription": "Test project created by xpresso platform",
+	"owner": {
+		"uid": "reyaz35"},
+	"developers": ["rahi41"],
+	"bigdata_environments":["DEV"],
+	"persistent_volume_size": 6,
+	"components": [
+		{
+			"type": "job",
+			"flavor": "pyspark",
+			"name": "BigDataComponent1",
+			"description": "Relevant description"
+		},
+		{
+			"type": "job",
+			"flavor": "pyspark",
+			"name": "BigDataComponent2",
+			"description": "Relevant description"
+
+		},
+		{
+			"type": "pipeline_job",
+			"flavor": "python",
+			"name": "Comp1",
+			"description": "Relevant description"
+		},
+		{
+			"type": "pipeline_job",
+			"flavor": "python",
+			"name": "Comp2",
+			"description": "Relevant description"
+		},
+		{
+			"type": "job",
+			"flavor": "python",
+			"name": "Comp3",
+			"description": "Relevant description"
+		}
+	],
+	"pipelines": [
+		{
+			"name": "Kubeflow_pipeline83",
+			"description": "Relevant description",
+			"components": ["Comp1", "Comp2"],
+			"after_dependencies": {"Comp2": ["Comp1"]}
+		},
+		{
+			"name":"BigData_pipeline83",
+			"description": "Relevant description",
+			"components":[
+				"BigDataComponent2",
+				"BigDataComponent1"
+			]
+		}
+	]
+}
+
+

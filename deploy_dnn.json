@@ -4,7 +4,7 @@
 	"environment_parameters" : [],
 	"components": { },
 	"pipelines": {
-		"kfold_pipeline": {
+		"seq_pipeline": {
 		"components": {
 			"data_fetch": {
 				"mount_path": "/data",
@@ -39,7 +39,7 @@
 						  ]
 			  },
 
-        		"dnn_kfold": {
+        		"dnn_train": {
 				"mount_path": "/data",
 				"build_version": "1",
 				"command": [ ],

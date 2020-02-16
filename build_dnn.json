@@ -1,7 +1,7 @@
 {
 	"name": "diabetes_dnn",
 	"components":{
-				"dnn_infer": {
+				"dnn_train": {
 					"branch": "master",
 					"description": "trial version - 1",
 					"xpresso_dependencies": ["xpresso_ai"]
