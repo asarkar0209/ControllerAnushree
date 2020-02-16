@@ -1,9 +1,9 @@
 {
-    "run_name":"spark_run_qa2",
-    "project_name":"crew_members_asarkar",
-    "pipeline_name":"predictive_pipeline",
+    "run_name":"bank_test_run1",
+    "project_name":"pipeline_rahi_project83",
+    "pipeline_name":"BigData_pipeline83",
     "pipeline_flavor":"pyspark",
-    "pipeline_version":4,
+    "pipeline_version":1,
  
     "run_parameters":{
        "driver_memory":"512m",
