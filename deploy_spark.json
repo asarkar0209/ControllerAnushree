@@ -2,7 +2,7 @@
    "name":"pipeline_rahi_project83",
    "target_environment":"DEV",
    "pipelines":{
-      "predictive_pipeline":{
+      "BigData_pipeline83":{
          "build_version" : 2
       }
    }
