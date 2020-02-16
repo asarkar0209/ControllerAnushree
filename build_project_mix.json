@@ -1,9 +1,19 @@
 {
   "name": "pipeline_rahi_project83",
+  "components":{
+    "BigDataComponent1":{
+     "branch":"master",
+     "description":"build from master with bank deposit predictor."
+    },
+    "BigDataComponent2":{
+     "branch":"master",
+     "description":"build from master with bank deposit predictor."
+    }
+ },
 	"pipelines": {
 	   "BigData_pipeline83": {
 		  "branch":"master",
-		  "description": "build one"
+		  "description": "build two"
 	   }
 	}
 }
