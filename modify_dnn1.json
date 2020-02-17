@@ -2,7 +2,7 @@
 	"name":"diabetes_dnn",
 	"pipelines":[
 	   {
-		  "name":"seq_pipeline",
+		  "name":"sequential_pipeline",
 		  "components":["data_fetch","dnn_train"],
 		  "after_dependencies":{"dnn_train": ["data_fetch"]}
 	   }
