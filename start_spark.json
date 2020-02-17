@@ -3,7 +3,7 @@
     "project_name":"pipeline_rahi_project83",
     "pipeline_name":"BigData_pipeline83",
     "pipeline_flavor":"pyspark",
-    "pipeline_version":1,
+    "pipeline_version":2,
  
     "run_parameters":{
        "driver_memory":"512m",
