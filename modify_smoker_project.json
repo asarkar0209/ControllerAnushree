@@ -1,9 +1,0 @@
-{
-	"name" : "diabetes_dnn",
-	"action_type":"delete",
-	"components": [{
-			"name" : "dnn_train"
-		}
-	]
-
-}

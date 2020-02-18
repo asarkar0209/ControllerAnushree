@@ -1,0 +1,11 @@
+{
+	"name" : "pipeline_rahi_project83",
+	"components": [
+		{
+			"type": "job",
+			"flavor": "pyspark",
+			"name": "BigDataComponent3",
+			"description": "Relevant description"
+		}]
+
+}
