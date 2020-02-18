@@ -5,7 +5,6 @@
 		{
 			"name": "pyspark_pipeline",
 			"description": "Relevant description",
-			"components": ["BigDataComponent1", "BigDataComponent3"],
-			"after_dependencies": {"BigDataComponent3": ["BigDataComponent1"]}
+			"components": ["BigDataComponent1", "BigDataComponent3","BigDataComponent2"]
 		}]
 }
