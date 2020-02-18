@@ -1,6 +1,6 @@
 {
-		"experiment name" : "sample_experiment",
-		"project name": "sample_project",
-		"pipeline name": "sample_pipeline",
-		"run_name": "sample_run"
+		"pipeline_version" : "6",
+		"project_name": "diabetes_dnn",
+		"pipeline_name": "kfold_pipeline",
+		"run_name": "dnn_run5"
 }
