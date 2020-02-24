@@ -1,0 +1,84 @@
+{
+    "outcome": "success",
+    "error_code": null,
+    "results": [
+      [
+        {
+          "pipeline_name": "kfold_pipeline",
+          "run_name": "dnn_run1",
+          "run_parameters": {
+            "repo_name": "diabetes_dnn",
+            "branch_name": "dnn_diabetes",
+            "inpath": "/dataset/diabetes_data",
+            "outpath": "/data",
+            "commit": "d74af8a7ffcd4260845f1b6eab00f455",
+            "batch_size": 10,
+            "train_epochs": 150
+          },
+          "status": [],
+          "run_status": "RUNNING",
+          "output": [],
+          "pipeline_version": 5,
+          "components_status": {
+            "data_fetch": "IDLE",
+            "dnn_kfold": "IDLE",
+            "pipeline_last_component": "dnn_kfold"
+          },
+          "started_by": "asarkar"
+        },
+        {
+          "pipeline_name": "kfold_pipeline",
+          "run_name": "dnn_run1",
+          "run_parameters": {
+            "repo_name": "diabetes_dnn",
+            "branch_name": "dnn_diabetes",
+            "inpath": "/dataset/diabetes_data",
+            "outpath": "/data",
+            "commit": "d74af8a7ffcd4260845f1b6eab00f455",
+            "batch_size": 10,
+            "train_epochs": 150
+          },
+          "status": [
+            {
+              "timestamp": "2020-01-22 13:35:58",
+              "component_name": "dnn_kfold",
+              "status": {
+                "message": "Component Started"
+              }
+            },
+            {
+              "timestamp": "2020-01-22 13:36:11",
+              "component_name": "dnn_kfold",
+              "status": {
+                "status": "data_prediction"
+              },
+              "metric": {
+                "accuracy": 33.766233921051025
+              }
+            },
+            {
+              "timestamp": "2020-01-22 13:36:12",
+              "component_name": "dnn_kfold",
+              "status": {
+                "message": "Component Completed"
+              }
+            }
+          ],
+          "run_status": "COMPLETED",
+          "output": [
+            {
+              "commit_id": "2b119e67128c442e9f19f0af073321fa",
+              "path": "/dataset/dnn_run1__diabetes_dnn__kfold_pipeline__6"
+            }
+          ],
+          "pipeline_version": 6,
+          "components_status": {
+            "data_fetch": "IDLE",
+            "dnn_kfold": "COMPLETED",
+            "pipeline_last_component": "dnn_kfold"
+          },
+          "started_by": "asarkar"
+        }
+      ]
+    ]
+  }

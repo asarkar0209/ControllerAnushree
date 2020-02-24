@@ -1,5 +1,5 @@
 {
-	"name":"smoker_test2",
+	"name":"cancer_detector",
 	"projectDescription":"Creates a sample project for Kubeflow ML pipeline",
 	"owner":{
 	   "uid":"asarkar"
@@ -13,7 +13,7 @@
 	"persistent_volume_size":2,
 	"components":[
 	   {
-		  "type":"pipeline_job",
+		  "type":"job",
 		  "flavor":"python",
 		  "name":"data_fetch",
 		  "description": "data importing"
@@ -36,9 +36,17 @@
 
 		"name": "data_import_prep",
 		"description":"DAta import and Preperation",
-		"components": ["data_fetch", "data_prep","ml_train"],
-		"after_dependencies": {"data_prep": ["data_fetch"], "ml_train": ["data_prep"]  }
+		"components": ["data_fetch", "data_prep"],
+		"after_dependencies": {"data_prep": ["data_fetch"]}
 		
+		},
+		{
+		  "name":"data_prep_train",
+		  "description":"Data preperation then Training",
+		  "components":["data_prep","ml_train"],
+		  "after_dependencies":{"ml_train":["data_prep"]}
+
 		}
+
 	]
  }
