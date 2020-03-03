@@ -15,7 +15,7 @@
         },
 
         "pipelines":{
-        "seq_pipeline": {
+        "Kubeflow_pipeline83": {
          "components": {
             "comp1": {
                "mount_path": "/data",
@@ -50,17 +50,11 @@
                        ]
               },
    
-                 "comp2": {
+               "comp2": {
                "mount_path": "/data",
-               "build_version": "1",
+               "build_version": "3",
                "command": [ ],
-               "args": [{"inputValue": "xpresso_run_name" },
-                         {
-                  "inputValue": "batch_size"
-               },
-               {
-                  "inputValue": "train_epochs"
-                    }]
+               "args": [{"inputValue": "xpresso_run_name" }]
                   }
          }
        }
