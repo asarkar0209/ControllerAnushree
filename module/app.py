@@ -24,7 +24,7 @@ class DataPrep(AbstractPipelineComponent):
                e.g - Model, customized dataset etc."""
         # super() contains the name of the component.
         super().__init__(name="DataPrep")
-        self.dataset =dataset
+        self.dataset = dataset
 
         print("Data load completed")
 

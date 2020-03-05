@@ -2,16 +2,7 @@
    "name":"pipeline_rahi_project83",
    "target_environment":"DEV",
    "components":{
-    "BigDataComponent3":{
-       "build_version" : 1,
-       "run_parameters":{
-          "driver_memory":"512m",
-          "executor_memory":"512m",
-          "executor_cores":1,
-          "num_executors":1,
-          "xpresso_run_name":"<xpresso_run_name>"
-               }
-             }
+    
         },
 
         "pipelines":{
