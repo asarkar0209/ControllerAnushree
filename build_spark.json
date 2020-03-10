@@ -1,21 +1,10 @@
 {
-	"name":"crew_members_asarkar",
-	"components":{
-	   "string_indexer":{
+	"name":"random_forest_asarkar",
+     
+	"components": {
+	   "pc3": {
 		  "branch":"master",
-		  "description":"build from master with stroke predictor."
-	   },"one_hot_encoder":{
-		  "branch":"master",
-		  "description":"build from master with stroke predictor."
-	   },"vector_assembler":{
-		  "branch":"master",
-		  "description":"build from master with stroke predictor."
-	   }
-	},
-	"pipelines": {
-	   "predictive_pipeline": {
-		  "branch":"master",
-		  "description": "build from master with stroke predictor."
+		  "description": "build from master with bank deposit predictor evaluation"
 	   }
 	}
  }

@@ -3,7 +3,16 @@
    "target_environment":"DEV",
    "pipelines":{
       "BigData_pipeline83":{
-         "build_version" : 3
+         "components":{
+          "BigDataComponent1":{
+          "build_version":2,
+          "args":[]
+        },
+        "BigDataComponent2":{
+          "build_version":2,
+          "args":[]
+        }
+      }
       }
    }
 }
